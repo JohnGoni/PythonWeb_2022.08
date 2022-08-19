@@ -31,10 +31,10 @@ def menu():
         f_image = request.files['image']
         print(f_image.filename)             # 사용자가 입력한 파일 이름
         filename = os.path.join(current_app.root_path, 'static/upload/') + f_image.filename
-        print(filename)
         f_image.save(filename)
         # 모델 실행후 결과를 돌려줌
         result = '독수리 (73.52%)'
+        mtime = int(mtime = os.stat(filename).st_mtime)
         return render_template('menu_res.html', result=result, menu=menu,
                                 fname=f_image.filename)
 
