@@ -1,0 +1,3263 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9b7625fae7a12671ff5d59528e8518cf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    <h3 align="center" style="font-size:20px">자동차 정비업체</h3>
+    
+            <div class="folium-map" id="map_9b7625fae7a12671ff5d59528e8518cf" ></div>
+        
+</body>
+<script>    
+    
+            var map_9b7625fae7a12671ff5d59528e8518cf = L.map(
+                "map_9b7625fae7a12671ff5d59528e8518cf",
+                {
+                    center: [35.17082685658121, 126.90966668376063],
+                    crs: L.CRS.EPSG3857,
+                    maxBounds: [[35.1615, 126.9042], [35.1615, 126.9042]],
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f0b61830e7f1b8ed039624cfe807561b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 17, "maxZoom": 17, "minZoom": 17, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+            var marker_0619ec34bb5573ca7b2c9f6435189c8a = L.marker(
+                [35.15926313, 126.925493],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_8a82404076c967d2cbaac2a6c8c42491 = L.popup({"maxWidth": 100});
+
+        
+            var html_0effc5efb02c2746f92f7e89a5725c7a = $(`<div id="html_0effc5efb02c2746f92f7e89a5725c7a" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=일이자동차공업사', target=_'blink'>광주광역시 동구 산수길35번길 36-2(계림동)</a></div>`)[0];
+            popup_8a82404076c967d2cbaac2a6c8c42491.setContent(html_0effc5efb02c2746f92f7e89a5725c7a);
+        
+
+        marker_0619ec34bb5573ca7b2c9f6435189c8a.bindPopup(popup_8a82404076c967d2cbaac2a6c8c42491)
+        ;
+
+        
+    
+    
+            marker_0619ec34bb5573ca7b2c9f6435189c8a.bindTooltip(
+                `<div>
+                     일이자동차공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13757510163b3ed70af244d258739429 = L.marker(
+                [35.15391124, 126.9291328],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_209040c470a11978170015536af54129 = L.popup({"maxWidth": 100});
+
+        
+            var html_9a9a6d6bd38f4578c599ed0023c4cf39 = $(`<div id="html_9a9a6d6bd38f4578c599ed0023c4cf39" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=환영공업사', target=_'blink'>광주광역시 동구 경양로 366(산수동)</a></div>`)[0];
+            popup_209040c470a11978170015536af54129.setContent(html_9a9a6d6bd38f4578c599ed0023c4cf39);
+        
+
+        marker_13757510163b3ed70af244d258739429.bindPopup(popup_209040c470a11978170015536af54129)
+        ;
+
+        
+    
+    
+            marker_13757510163b3ed70af244d258739429.bindTooltip(
+                `<div>
+                     환영공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_36c45bcd9d30058b1ce6fca4c266b437 = L.marker(
+                [35.14955263, 126.9297731],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_5e300c58650dc75bcc44de7cf174975c = L.popup({"maxWidth": 100});
+
+        
+            var html_425d4b136c2fd53790b467949017cf0e = $(`<div id="html_425d4b136c2fd53790b467949017cf0e" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=붕붕자동차공업사', target=_'blink'>광주광역시 동구 필문대로 239(동명동)</a></div>`)[0];
+            popup_5e300c58650dc75bcc44de7cf174975c.setContent(html_425d4b136c2fd53790b467949017cf0e);
+        
+
+        marker_36c45bcd9d30058b1ce6fca4c266b437.bindPopup(popup_5e300c58650dc75bcc44de7cf174975c)
+        ;
+
+        
+    
+    
+            marker_36c45bcd9d30058b1ce6fca4c266b437.bindTooltip(
+                `<div>
+                     붕붕자동차공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_639992a9d6ae75e71286b504223d5ed9 = L.marker(
+                [35.14792078, 126.932259],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_f94e7f697f203ced12a921fbd45a42b4 = L.popup({"maxWidth": 100});
+
+        
+            var html_245433b782949b8019233f04dff4ed96 = $(`<div id="html_245433b782949b8019233f04dff4ed96" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=아성자동차공업사', target=_'blink'>광주광역시 동구 지산로 45(지산동)</a></div>`)[0];
+            popup_f94e7f697f203ced12a921fbd45a42b4.setContent(html_245433b782949b8019233f04dff4ed96);
+        
+
+        marker_639992a9d6ae75e71286b504223d5ed9.bindPopup(popup_f94e7f697f203ced12a921fbd45a42b4)
+        ;
+
+        
+    
+    
+            marker_639992a9d6ae75e71286b504223d5ed9.bindTooltip(
+                `<div>
+                     아성자동차공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebace67d8f2e9dd4b4c3f26ce470160b = L.marker(
+                [35.16064808, 126.9152184],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_3940b0a49d0e6df905354db752aee802 = L.popup({"maxWidth": 100});
+
+        
+            var html_124b6d6fe47dd3077bdbfb85508d6755 = $(`<div id="html_124b6d6fe47dd3077bdbfb85508d6755" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=화랑자동차공업사', target=_'blink'>광주광역시 동구 중흥로 198(계림동)</a></div>`)[0];
+            popup_3940b0a49d0e6df905354db752aee802.setContent(html_124b6d6fe47dd3077bdbfb85508d6755);
+        
+
+        marker_ebace67d8f2e9dd4b4c3f26ce470160b.bindPopup(popup_3940b0a49d0e6df905354db752aee802)
+        ;
+
+        
+    
+    
+            marker_ebace67d8f2e9dd4b4c3f26ce470160b.bindTooltip(
+                `<div>
+                     화랑자동차공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b9184ceea7cd1ee90ea0accfc7a36553 = L.marker(
+                [35.16058906, 126.9300841],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_47905541c508d865c74299d548321433 = L.popup({"maxWidth": 100});
+
+        
+            var html_0b3c684158cda86f77f44b62810b3b92 = $(`<div id="html_0b3c684158cda86f77f44b62810b3b92" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=현대자동차 산수점', target=_'blink'>광주광역시 동구 필문대로 112(산수동)</a></div>`)[0];
+            popup_47905541c508d865c74299d548321433.setContent(html_0b3c684158cda86f77f44b62810b3b92);
+        
+
+        marker_b9184ceea7cd1ee90ea0accfc7a36553.bindPopup(popup_47905541c508d865c74299d548321433)
+        ;
+
+        
+    
+    
+            marker_b9184ceea7cd1ee90ea0accfc7a36553.bindTooltip(
+                `<div>
+                     현대자동차 산수점
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7545d18e986237cf1b6dd025c766923 = L.marker(
+                [35.12777244, 126.9303535],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_d8b69789469f33083d2bc97299b9b0ec = L.popup({"maxWidth": 100});
+
+        
+            var html_85e278559858342b45b0c1af8d4ac507 = $(`<div id="html_85e278559858342b45b0c1af8d4ac507" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=타이어프로 종원카센타', target=_'blink'>광주광역시 동구 남문로 639(소태동)</a></div>`)[0];
+            popup_d8b69789469f33083d2bc97299b9b0ec.setContent(html_85e278559858342b45b0c1af8d4ac507);
+        
+
+        marker_c7545d18e986237cf1b6dd025c766923.bindPopup(popup_d8b69789469f33083d2bc97299b9b0ec)
+        ;
+
+        
+    
+    
+            marker_c7545d18e986237cf1b6dd025c766923.bindTooltip(
+                `<div>
+                     타이어프로 종원카센타
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9306b1f1c9ab94dd5761e70613e75d0c = L.marker(
+                [35.15370772, 126.9264288],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_9f832bd2cfa769e1612a4eb8ea9102b0 = L.popup({"maxWidth": 100});
+
+        
+            var html_0f04d3310f18bdb83aae3fd11d66d67b = $(`<div id="html_0f04d3310f18bdb83aae3fd11d66d67b" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=남일자동차공업사', target=_'blink'>광주광역시 동구 경양로 342(산수동)</a></div>`)[0];
+            popup_9f832bd2cfa769e1612a4eb8ea9102b0.setContent(html_0f04d3310f18bdb83aae3fd11d66d67b);
+        
+
+        marker_9306b1f1c9ab94dd5761e70613e75d0c.bindPopup(popup_9f832bd2cfa769e1612a4eb8ea9102b0)
+        ;
+
+        
+    
+    
+            marker_9306b1f1c9ab94dd5761e70613e75d0c.bindTooltip(
+                `<div>
+                     남일자동차공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c0d0ef901116761a2a752cbbb39d9a4 = L.marker(
+                [35.12485524, 126.929689],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_d002c639867595c17d201102d47d0790 = L.popup({"maxWidth": 100});
+
+        
+            var html_78cf8f20873eb2c530bcc22bf6f2d648 = $(`<div id="html_78cf8f20873eb2c530bcc22bf6f2d648" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=도움부분정비공업사', target=_'blink'>광주광역시 동구 천변좌로 666(용산동)</a></div>`)[0];
+            popup_d002c639867595c17d201102d47d0790.setContent(html_78cf8f20873eb2c530bcc22bf6f2d648);
+        
+
+        marker_0c0d0ef901116761a2a752cbbb39d9a4.bindPopup(popup_d002c639867595c17d201102d47d0790)
+        ;
+
+        
+    
+    
+            marker_0c0d0ef901116761a2a752cbbb39d9a4.bindTooltip(
+                `<div>
+                     도움부분정비공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb41f405e53aab2464bb65536b453b7b = L.marker(
+                [35.15951827, 126.9185737],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_99554a67add18ae975c20359480e936a = L.popup({"maxWidth": 100});
+
+        
+            var html_486033fc22cdce421b8dbd2c74444d00 = $(`<div id="html_486033fc22cdce421b8dbd2c74444d00" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=2U카모터스', target=_'blink'>광주광역시 동구 중흥로 229(계림동)</a></div>`)[0];
+            popup_99554a67add18ae975c20359480e936a.setContent(html_486033fc22cdce421b8dbd2c74444d00);
+        
+
+        marker_eb41f405e53aab2464bb65536b453b7b.bindPopup(popup_99554a67add18ae975c20359480e936a)
+        ;
+
+        
+    
+    
+            marker_eb41f405e53aab2464bb65536b453b7b.bindTooltip(
+                `<div>
+                     2U카모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb1f18864c61259b28406daaeda626db = L.marker(
+                [35.15903173, 126.9188552],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_08d976e773a5f28d2df448505ef57a8e = L.popup({"maxWidth": 100});
+
+        
+            var html_2d57d0cefd3ba6d792f85d78ebd903ae = $(`<div id="html_2d57d0cefd3ba6d792f85d78ebd903ae" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=대명카센타', target=_'blink'>광주광역시 동구 경양로243번길 25(계림동)</a></div>`)[0];
+            popup_08d976e773a5f28d2df448505ef57a8e.setContent(html_2d57d0cefd3ba6d792f85d78ebd903ae);
+        
+
+        marker_eb1f18864c61259b28406daaeda626db.bindPopup(popup_08d976e773a5f28d2df448505ef57a8e)
+        ;
+
+        
+    
+    
+            marker_eb1f18864c61259b28406daaeda626db.bindTooltip(
+                `<div>
+                     대명카센타
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b9f5c7f572aaf9172addee178290253 = L.marker(
+                [35.1242477, 126.9328228],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_efc971a784e873cc666ee061dd320fef = L.popup({"maxWidth": 100});
+
+        
+            var html_8d80215395c4fdb73411a8f2e6629278 = $(`<div id="html_8d80215395c4fdb73411a8f2e6629278" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=우리카부분정비공업사', target=_'blink'>광주광역시 동구 남문로 594-11(소태동)</a></div>`)[0];
+            popup_efc971a784e873cc666ee061dd320fef.setContent(html_8d80215395c4fdb73411a8f2e6629278);
+        
+
+        marker_9b9f5c7f572aaf9172addee178290253.bindPopup(popup_efc971a784e873cc666ee061dd320fef)
+        ;
+
+        
+    
+    
+            marker_9b9f5c7f572aaf9172addee178290253.bindTooltip(
+                `<div>
+                     우리카부분정비공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fbfc720151dcf74b8c595c589ef0c87d = L.marker(
+                [35.14931152, 126.9371612],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_3c008a683d1c37c1beb8a7add096d917 = L.popup({"maxWidth": 100});
+
+        
+            var html_b981dd0b239199aa1bbff1381cf1a2af = $(`<div id="html_b981dd0b239199aa1bbff1381cf1a2af" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=광남카써비스', target=_'blink'>광주광역시 동구 밤실로 20(지산동)</a></div>`)[0];
+            popup_3c008a683d1c37c1beb8a7add096d917.setContent(html_b981dd0b239199aa1bbff1381cf1a2af);
+        
+
+        marker_fbfc720151dcf74b8c595c589ef0c87d.bindPopup(popup_3c008a683d1c37c1beb8a7add096d917)
+        ;
+
+        
+    
+    
+            marker_fbfc720151dcf74b8c595c589ef0c87d.bindTooltip(
+                `<div>
+                     광남카써비스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_366260a64c550ff28be2bd469aec5515 = L.marker(
+                [35.12604949, 126.9311493],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_2da1a71b7aacd3f6b980dbfc575d85ea = L.popup({"maxWidth": 100});
+
+        
+            var html_68a95aac7cfb8acb214ff17a591d318a = $(`<div id="html_68a95aac7cfb8acb214ff17a591d318a" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=광주자동차공업사', target=_'blink'>광주광역시 동구 남문로 617(소태동)</a></div>`)[0];
+            popup_2da1a71b7aacd3f6b980dbfc575d85ea.setContent(html_68a95aac7cfb8acb214ff17a591d318a);
+        
+
+        marker_366260a64c550ff28be2bd469aec5515.bindPopup(popup_2da1a71b7aacd3f6b980dbfc575d85ea)
+        ;
+
+        
+    
+    
+            marker_366260a64c550ff28be2bd469aec5515.bindTooltip(
+                `<div>
+                     광주자동차공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cde09d75fd20d0ef78062bbf0ed1a33d = L.marker(
+                [35.13220873, 126.9331542],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_d5b0433114925c11e92d135e71f78d0a = L.popup({"maxWidth": 100});
+
+        
+            var html_b76dcb2774b8f51f5056331c3a182b6d = $(`<div id="html_b76dcb2774b8f51f5056331c3a182b6d" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=애니카랜드 학동점', target=_'blink'>광주광역시 동구 증심천로33번길 19-1(학동)</a></div>`)[0];
+            popup_d5b0433114925c11e92d135e71f78d0a.setContent(html_b76dcb2774b8f51f5056331c3a182b6d);
+        
+
+        marker_cde09d75fd20d0ef78062bbf0ed1a33d.bindPopup(popup_d5b0433114925c11e92d135e71f78d0a)
+        ;
+
+        
+    
+    
+            marker_cde09d75fd20d0ef78062bbf0ed1a33d.bindTooltip(
+                `<div>
+                     애니카랜드 학동점
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7c63bd26eb6a33aeb9dd754e628b1a3 = L.marker(
+                [35.1578731, 126.9282469],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_a19d34009b4107e365fa99cb4f5166ff = L.popup({"maxWidth": 100});
+
+        
+            var html_b6d3c5668f973c898718af829d3fecb1 = $(`<div id="html_b6d3c5668f973c898718af829d3fecb1" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=스카이모터스', target=_'blink'>광주광역시 동구 무등로 428-2(계림동)</a></div>`)[0];
+            popup_a19d34009b4107e365fa99cb4f5166ff.setContent(html_b6d3c5668f973c898718af829d3fecb1);
+        
+
+        marker_e7c63bd26eb6a33aeb9dd754e628b1a3.bindPopup(popup_a19d34009b4107e365fa99cb4f5166ff)
+        ;
+
+        
+    
+    
+            marker_e7c63bd26eb6a33aeb9dd754e628b1a3.bindTooltip(
+                `<div>
+                     스카이모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f9945f417ed64fa48fec991735fd970 = L.marker(
+                [35.1267816, 126.9315217],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_800bac4226e2c68dad24f179686ed84f = L.popup({"maxWidth": 100});
+
+        
+            var html_a834dbe4983c07e7bd7bc97393c8cac5 = $(`<div id="html_a834dbe4983c07e7bd7bc97393c8cac5" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=학동카센타', target=_'blink'>광주광역시 동구 남문로622번길 1(소태동)</a></div>`)[0];
+            popup_800bac4226e2c68dad24f179686ed84f.setContent(html_a834dbe4983c07e7bd7bc97393c8cac5);
+        
+
+        marker_5f9945f417ed64fa48fec991735fd970.bindPopup(popup_800bac4226e2c68dad24f179686ed84f)
+        ;
+
+        
+    
+    
+            marker_5f9945f417ed64fa48fec991735fd970.bindTooltip(
+                `<div>
+                     학동카센타
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57122a11e159910ebf34fcb2328c0766 = L.marker(
+                [35.15803524, 126.9280844],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_2538772fb54d35f8b332a3db08c407fa = L.popup({"maxWidth": 100});
+
+        
+            var html_0501f6e82cfe706df2222184f386ad71 = $(`<div id="html_0501f6e82cfe706df2222184f386ad71" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=하이카랜드', target=_'blink'>광주광역시 동구 무등로 426(산수동)</a></div>`)[0];
+            popup_2538772fb54d35f8b332a3db08c407fa.setContent(html_0501f6e82cfe706df2222184f386ad71);
+        
+
+        marker_57122a11e159910ebf34fcb2328c0766.bindPopup(popup_2538772fb54d35f8b332a3db08c407fa)
+        ;
+
+        
+    
+    
+            marker_57122a11e159910ebf34fcb2328c0766.bindTooltip(
+                `<div>
+                     하이카랜드
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e12ef068cc0337b27b91a6346d6380db = L.marker(
+                [35.12261675, 126.9305598],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_744bb07ae09e9f1e2f4b21f3e1fe4d4b = L.popup({"maxWidth": 100});
+
+        
+            var html_5674e8a7b9ef4c9a5c7b364f70c28f67 = $(`<div id="html_5674e8a7b9ef4c9a5c7b364f70c28f67" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=현대자동차공업사', target=_'blink'>광주광역시 동구 천변좌로 692(용산동)</a></div>`)[0];
+            popup_744bb07ae09e9f1e2f4b21f3e1fe4d4b.setContent(html_5674e8a7b9ef4c9a5c7b364f70c28f67);
+        
+
+        marker_e12ef068cc0337b27b91a6346d6380db.bindPopup(popup_744bb07ae09e9f1e2f4b21f3e1fe4d4b)
+        ;
+
+        
+    
+    
+            marker_e12ef068cc0337b27b91a6346d6380db.bindTooltip(
+                `<div>
+                     현대자동차공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca590600874a9dec5747b5692f0671e2 = L.marker(
+                [35.13187542, 126.9368937],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_9d6a6d644f1ad8dc73b2e2ca41a10492 = L.popup({"maxWidth": 100});
+
+        
+            var html_92870b746ab4ecadac0d4290e26372c0 = $(`<div id="html_92870b746ab4ecadac0d4290e26372c0" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=노아자동차정비소', target=_'blink'>광주광역시 동구 의재로 86(소태동)</a></div>`)[0];
+            popup_9d6a6d644f1ad8dc73b2e2ca41a10492.setContent(html_92870b746ab4ecadac0d4290e26372c0);
+        
+
+        marker_ca590600874a9dec5747b5692f0671e2.bindPopup(popup_9d6a6d644f1ad8dc73b2e2ca41a10492)
+        ;
+
+        
+    
+    
+            marker_ca590600874a9dec5747b5692f0671e2.bindTooltip(
+                `<div>
+                     노아자동차정비소
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_101f020746ec74c12879f7552b832305 = L.marker(
+                [35.15670958, 126.9132996],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_b5692313b93a5da7270f0644eb84393c = L.popup({"maxWidth": 100});
+
+        
+            var html_7f488e3e2377777e2bfa3c3e89acfc31 = $(`<div id="html_7f488e3e2377777e2bfa3c3e89acfc31" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=남선카서비스', target=_'blink'>광주광역시 동구 동계천로 4(대인동)</a></div>`)[0];
+            popup_b5692313b93a5da7270f0644eb84393c.setContent(html_7f488e3e2377777e2bfa3c3e89acfc31);
+        
+
+        marker_101f020746ec74c12879f7552b832305.bindPopup(popup_b5692313b93a5da7270f0644eb84393c)
+        ;
+
+        
+    
+    
+            marker_101f020746ec74c12879f7552b832305.bindTooltip(
+                `<div>
+                     남선카서비스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1a21149f39e4599e8e0ce5b6baeea0b = L.marker(
+                [35.14341826, 126.9160659],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_a301c8d6c5a0d2048b770b8055caf2f5 = L.popup({"maxWidth": 100});
+
+        
+            var html_14ad20427a0b7c51b2a6961985944e14 = $(`<div id="html_14ad20427a0b7c51b2a6961985944e14" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=신호자동차정비', target=_'blink'>광주광역시 동구 천변우로 435(금동)</a></div>`)[0];
+            popup_a301c8d6c5a0d2048b770b8055caf2f5.setContent(html_14ad20427a0b7c51b2a6961985944e14);
+        
+
+        marker_a1a21149f39e4599e8e0ce5b6baeea0b.bindPopup(popup_a301c8d6c5a0d2048b770b8055caf2f5)
+        ;
+
+        
+    
+    
+            marker_a1a21149f39e4599e8e0ce5b6baeea0b.bindTooltip(
+                `<div>
+                     신호자동차정비
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b28267252f546b3f6c278b86eb440bd = L.marker(
+                [35.14846446, 126.9309373],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_76d6e84b8504b612f41f16c1237c0fac = L.popup({"maxWidth": 100});
+
+        
+            var html_0ed1e87f5a6d0ab8e9586e4db5fb26b7 = $(`<div id="html_0ed1e87f5a6d0ab8e9586e4db5fb26b7" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=보리카매니아', target=_'blink'>광주광역시 동구 지호로 18(지산동)</a></div>`)[0];
+            popup_76d6e84b8504b612f41f16c1237c0fac.setContent(html_0ed1e87f5a6d0ab8e9586e4db5fb26b7);
+        
+
+        marker_0b28267252f546b3f6c278b86eb440bd.bindPopup(popup_76d6e84b8504b612f41f16c1237c0fac)
+        ;
+
+        
+    
+    
+            marker_0b28267252f546b3f6c278b86eb440bd.bindTooltip(
+                `<div>
+                     보리카매니아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9dfbb1b3bd21390e3a75ac0c691892d = L.marker(
+                [35.15927115, 126.9268101],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_2161d2ae5332dc8d60db616389032502 = L.popup({"maxWidth": 100});
+
+        
+            var html_d204ca81876af8c010e98f6df59515fa = $(`<div id="html_d204ca81876af8c010e98f6df59515fa" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=가온카클리닉', target=_'blink'>광주광역시 동구 무등로 408-1(계림동)</a></div>`)[0];
+            popup_2161d2ae5332dc8d60db616389032502.setContent(html_d204ca81876af8c010e98f6df59515fa);
+        
+
+        marker_d9dfbb1b3bd21390e3a75ac0c691892d.bindPopup(popup_2161d2ae5332dc8d60db616389032502)
+        ;
+
+        
+    
+    
+            marker_d9dfbb1b3bd21390e3a75ac0c691892d.bindTooltip(
+                `<div>
+                     가온카클리닉
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0723e09562ffcd12a7ab400bf6b8709 = L.marker(
+                [35.15723922, 126.9294065],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_444532faef8dc89af460fdbe57935083 = L.popup({"maxWidth": 100});
+
+        
+            var html_566408e19b51e4d6a65d1ce636e8a327 = $(`<div id="html_566408e19b51e4d6a65d1ce636e8a327" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=에이스모터스', target=_'blink'>광주광역시 동구 무등로 439(산수동)</a></div>`)[0];
+            popup_444532faef8dc89af460fdbe57935083.setContent(html_566408e19b51e4d6a65d1ce636e8a327);
+        
+
+        marker_d0723e09562ffcd12a7ab400bf6b8709.bindPopup(popup_444532faef8dc89af460fdbe57935083)
+        ;
+
+        
+    
+    
+            marker_d0723e09562ffcd12a7ab400bf6b8709.bindTooltip(
+                `<div>
+                     에이스모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3197d751c1f2725122a8bc846ade4c05 = L.marker(
+                [35.12701121, 126.9295248],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_bf88fdab763206bafcba2eeea2a7be9c = L.popup({"maxWidth": 100});
+
+        
+            var html_9043bf02fc8e1ef84d3fb119d7232d3d = $(`<div id="html_9043bf02fc8e1ef84d3fb119d7232d3d" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=우주카센타', target=_'blink'>광주광역시 동구 천변좌로 642-1(소태동)</a></div>`)[0];
+            popup_bf88fdab763206bafcba2eeea2a7be9c.setContent(html_9043bf02fc8e1ef84d3fb119d7232d3d);
+        
+
+        marker_3197d751c1f2725122a8bc846ade4c05.bindPopup(popup_bf88fdab763206bafcba2eeea2a7be9c)
+        ;
+
+        
+    
+    
+            marker_3197d751c1f2725122a8bc846ade4c05.bindTooltip(
+                `<div>
+                     우주카센타
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0bfe566e7b5f8ab3ddad3a0b765c1350 = L.marker(
+                [35.15882672, 126.931328],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_9f3d868cd84cbe661cebb4829409c4bb = L.popup({"maxWidth": 100});
+
+        
+            var html_79ac9c106dbfb4ba0a0869014750340d = $(`<div id="html_79ac9c106dbfb4ba0a0869014750340d" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=르노코리아자동차서비스코너 산수점', target=_'blink'>광주광역시 동구 필문대로 133(산수동)</a></div>`)[0];
+            popup_9f3d868cd84cbe661cebb4829409c4bb.setContent(html_79ac9c106dbfb4ba0a0869014750340d);
+        
+
+        marker_0bfe566e7b5f8ab3ddad3a0b765c1350.bindPopup(popup_9f3d868cd84cbe661cebb4829409c4bb)
+        ;
+
+        
+    
+    
+            marker_0bfe566e7b5f8ab3ddad3a0b765c1350.bindTooltip(
+                `<div>
+                     르노코리아자동차서비스코너 산수점
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2239d04732d70e2427e974d479b2fbe8 = L.marker(
+                [35.15776551, 126.9356972],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_8c4096564bff871b64974c50eb54c0ed = L.popup({"maxWidth": 100});
+
+        
+            var html_0a88e759497b0aed2b333ff6010b1d00 = $(`<div id="html_0a88e759497b0aed2b333ff6010b1d00" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=유앤아이모터스', target=_'blink'>광주광역시 동구 밤실로116번길 1(산수동)</a></div>`)[0];
+            popup_8c4096564bff871b64974c50eb54c0ed.setContent(html_0a88e759497b0aed2b333ff6010b1d00);
+        
+
+        marker_2239d04732d70e2427e974d479b2fbe8.bindPopup(popup_8c4096564bff871b64974c50eb54c0ed)
+        ;
+
+        
+    
+    
+            marker_2239d04732d70e2427e974d479b2fbe8.bindTooltip(
+                `<div>
+                     유앤아이모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9534c373b78d1387a50138018ed5a7bf = L.marker(
+                [35.15509686, 126.9345359],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_7631bb9a660d6d1b81aca038440a13d8 = L.popup({"maxWidth": 100});
+
+        
+            var html_d98b5f4a0e7540d564fd0db3c40ddb41 = $(`<div id="html_d98b5f4a0e7540d564fd0db3c40ddb41" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=현대정비센타', target=_'blink'>광주광역시 동구 필문대로187번길 19-21(산수동)</a></div>`)[0];
+            popup_7631bb9a660d6d1b81aca038440a13d8.setContent(html_d98b5f4a0e7540d564fd0db3c40ddb41);
+        
+
+        marker_9534c373b78d1387a50138018ed5a7bf.bindPopup(popup_7631bb9a660d6d1b81aca038440a13d8)
+        ;
+
+        
+    
+    
+            marker_9534c373b78d1387a50138018ed5a7bf.bindTooltip(
+                `<div>
+                     현대정비센타
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b86fa94dcea0c912d43faaade3a31427 = L.marker(
+                [35.11963209, 126.9317208],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_f490b196cf666545ddbf8d4a74b73097 = L.popup({"maxWidth": 100});
+
+        
+            var html_5c16807d52c86b86031568123878ff01 = $(`<div id="html_5c16807d52c86b86031568123878ff01" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=만카종합카써비스', target=_'blink'>광주광역시 동구 화산로 346(용산동)</a></div>`)[0];
+            popup_f490b196cf666545ddbf8d4a74b73097.setContent(html_5c16807d52c86b86031568123878ff01);
+        
+
+        marker_b86fa94dcea0c912d43faaade3a31427.bindPopup(popup_f490b196cf666545ddbf8d4a74b73097)
+        ;
+
+        
+    
+    
+            marker_b86fa94dcea0c912d43faaade3a31427.bindTooltip(
+                `<div>
+                     만카종합카써비스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_550f7b802471f270bd108a2a18375a4a = L.marker(
+                [35.12060663, 126.9405841],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_4416112e1d9cd168fbc15dbcced7b45a = L.popup({"maxWidth": 100});
+
+        
+            var html_7eb749f89bbbd6dc619fa14893e962e2 = $(`<div id="html_7eb749f89bbbd6dc619fa14893e962e2" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=(유)한결자동차서비스', target=_'blink'>광주광역시 동구 소태길 76(소태동)</a></div>`)[0];
+            popup_4416112e1d9cd168fbc15dbcced7b45a.setContent(html_7eb749f89bbbd6dc619fa14893e962e2);
+        
+
+        marker_550f7b802471f270bd108a2a18375a4a.bindPopup(popup_4416112e1d9cd168fbc15dbcced7b45a)
+        ;
+
+        
+    
+    
+            marker_550f7b802471f270bd108a2a18375a4a.bindTooltip(
+                `<div>
+                     (유)한결자동차서비스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e22e8878a3e1f88cd591374b1e81bd96 = L.marker(
+                [35.15212895, 126.9272522],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_723a36ccf26eaea86354461606f5e99a = L.popup({"maxWidth": 100});
+
+        
+            var html_8efefbb44ef7ed3db867cbd2db2844de = $(`<div id="html_8efefbb44ef7ed3db867cbd2db2844de" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=모아카서비스', target=_'blink'>광주광역시 동구 동명로67번길 14(지산동)</a></div>`)[0];
+            popup_723a36ccf26eaea86354461606f5e99a.setContent(html_8efefbb44ef7ed3db867cbd2db2844de);
+        
+
+        marker_e22e8878a3e1f88cd591374b1e81bd96.bindPopup(popup_723a36ccf26eaea86354461606f5e99a)
+        ;
+
+        
+    
+    
+            marker_e22e8878a3e1f88cd591374b1e81bd96.bindTooltip(
+                `<div>
+                     모아카서비스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc526480b130e760b413a41f2348de1d = L.marker(
+                [35.14864732, 126.9291921],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_dff2abe3385521e4229c59fbb07fb3e1 = L.popup({"maxWidth": 100});
+
+        
+            var html_aa130c3af971b8421a0ce7db2ca48e9b = $(`<div id="html_aa130c3af971b8421a0ce7db2ca48e9b" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=바별카튜닝', target=_'blink'>광주광역시 동구 필문대로 251(동명동)</a></div>`)[0];
+            popup_dff2abe3385521e4229c59fbb07fb3e1.setContent(html_aa130c3af971b8421a0ce7db2ca48e9b);
+        
+
+        marker_fc526480b130e760b413a41f2348de1d.bindPopup(popup_dff2abe3385521e4229c59fbb07fb3e1)
+        ;
+
+        
+    
+    
+            marker_fc526480b130e760b413a41f2348de1d.bindTooltip(
+                `<div>
+                     바별카튜닝
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a1fd9887a01db266ee20e859f08121d = L.marker(
+                [35.15110723, 126.9309131],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_27f017b3b7b1aa96c026e0a62ee44d4d = L.popup({"maxWidth": 100});
+
+        
+            var html_7bbfd8fe1571d4606ab5361d5d997130 = $(`<div id="html_7bbfd8fe1571d4606ab5361d5d997130" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=지산경정비', target=_'blink'>광주광역시 동구 필문대로 219(지산동)</a></div>`)[0];
+            popup_27f017b3b7b1aa96c026e0a62ee44d4d.setContent(html_7bbfd8fe1571d4606ab5361d5d997130);
+        
+
+        marker_3a1fd9887a01db266ee20e859f08121d.bindPopup(popup_27f017b3b7b1aa96c026e0a62ee44d4d)
+        ;
+
+        
+    
+    
+            marker_3a1fd9887a01db266ee20e859f08121d.bindTooltip(
+                `<div>
+                     지산경정비
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_12891136860eaa10263d8e6d2a0f6221 = L.marker(
+                [35.16004748, 126.9174054],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_e2172d10556a423de9bb11e3bbd4b8cd = L.popup({"maxWidth": 100});
+
+        
+            var html_8b1e68de91f5c3f7af823480f95d1906 = $(`<div id="html_8b1e68de91f5c3f7af823480f95d1906" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=고려자동차공업사', target=_'blink'>광주광역시 동구 중흥로 217(계림동)</a></div>`)[0];
+            popup_e2172d10556a423de9bb11e3bbd4b8cd.setContent(html_8b1e68de91f5c3f7af823480f95d1906);
+        
+
+        marker_12891136860eaa10263d8e6d2a0f6221.bindPopup(popup_e2172d10556a423de9bb11e3bbd4b8cd)
+        ;
+
+        
+    
+    
+            marker_12891136860eaa10263d8e6d2a0f6221.bindTooltip(
+                `<div>
+                     고려자동차공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cedeec21873651036f168a1e97818c78 = L.marker(
+                [35.16143883, 126.9166397],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_52ce285dd355a0da75e5fd2e139a5256 = L.popup({"maxWidth": 100});
+
+        
+            var html_6056011f242844fae254b671f3632103 = $(`<div id="html_6056011f242844fae254b671f3632103" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=오토오아시스홈플러스 계림점', target=_'blink'>광주광역시 동구 무등로 314(계림동)</a></div>`)[0];
+            popup_52ce285dd355a0da75e5fd2e139a5256.setContent(html_6056011f242844fae254b671f3632103);
+        
+
+        marker_cedeec21873651036f168a1e97818c78.bindPopup(popup_52ce285dd355a0da75e5fd2e139a5256)
+        ;
+
+        
+    
+    
+            marker_cedeec21873651036f168a1e97818c78.bindTooltip(
+                `<div>
+                     오토오아시스홈플러스 계림점
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8fed377f5ed2d78d3ae2e6988896bcc6 = L.marker(
+                [35.16323045, 126.9158392],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_cf981bd19d1193eac531671dc8f2e7fd = L.popup({"maxWidth": 100});
+
+        
+            var html_cbbd9cd10208af0ffef401f53de8b627 = $(`<div id="html_cbbd9cd10208af0ffef401f53de8b627" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=카복지매장', target=_'blink'>광주광역시 동구 독립로368번길 5(계림동)</a></div>`)[0];
+            popup_cf981bd19d1193eac531671dc8f2e7fd.setContent(html_cbbd9cd10208af0ffef401f53de8b627);
+        
+
+        marker_8fed377f5ed2d78d3ae2e6988896bcc6.bindPopup(popup_cf981bd19d1193eac531671dc8f2e7fd)
+        ;
+
+        
+    
+    
+            marker_8fed377f5ed2d78d3ae2e6988896bcc6.bindTooltip(
+                `<div>
+                     카복지매장
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1c62941c7dbaa4a4c8978a104c4af32 = L.marker(
+                [35.14823046, 126.9315696],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_647a07d926cb12753bb2098e6bd23f0f = L.popup({"maxWidth": 100});
+
+        
+            var html_ab417c3fa0fde58d461a519bc3ee0ee8 = $(`<div id="html_ab417c3fa0fde58d461a519bc3ee0ee8" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=신동아3급자동차공업사', target=_'blink'>광주광역시 동구 지호로 24(지산동)</a></div>`)[0];
+            popup_647a07d926cb12753bb2098e6bd23f0f.setContent(html_ab417c3fa0fde58d461a519bc3ee0ee8);
+        
+
+        marker_d1c62941c7dbaa4a4c8978a104c4af32.bindPopup(popup_647a07d926cb12753bb2098e6bd23f0f)
+        ;
+
+        
+    
+    
+            marker_d1c62941c7dbaa4a4c8978a104c4af32.bindTooltip(
+                `<div>
+                     신동아3급자동차공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35cebc244ec249f9acd2c7be6c80145a = L.marker(
+                [35.11921315, 126.9304705],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_9dd878edcd8c844e3c61217076debe2f = L.popup({"maxWidth": 100});
+
+        
+            var html_07e168953385959a64fdb5b804876894 = $(`<div id="html_07e168953385959a64fdb5b804876894" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=용산카서비스', target=_'blink'>광주광역시 동구 화산로335번길 3(용산동)</a></div>`)[0];
+            popup_9dd878edcd8c844e3c61217076debe2f.setContent(html_07e168953385959a64fdb5b804876894);
+        
+
+        marker_35cebc244ec249f9acd2c7be6c80145a.bindPopup(popup_9dd878edcd8c844e3c61217076debe2f)
+        ;
+
+        
+    
+    
+            marker_35cebc244ec249f9acd2c7be6c80145a.bindTooltip(
+                `<div>
+                     용산카서비스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8efcd10fda14b255524c5e39ecee9501 = L.marker(
+                [35.1593711, 126.9312617],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_6103a134ad5633d93c07d51747126691 = L.popup({"maxWidth": 100});
+
+        
+            var html_085c7963d7126cbe51ba4857d8aad3d1 = $(`<div id="html_085c7963d7126cbe51ba4857d8aad3d1" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=매직카용품', target=_'blink'>광주광역시 동구 필문대로 127(산수동)</a></div>`)[0];
+            popup_6103a134ad5633d93c07d51747126691.setContent(html_085c7963d7126cbe51ba4857d8aad3d1);
+        
+
+        marker_8efcd10fda14b255524c5e39ecee9501.bindPopup(popup_6103a134ad5633d93c07d51747126691)
+        ;
+
+        
+    
+    
+            marker_8efcd10fda14b255524c5e39ecee9501.bindTooltip(
+                `<div>
+                     매직카용품
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5873be1d32fd2e5673496c4df1adcd55 = L.marker(
+                [35.10193508, 126.9380548],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_1019b8af603252f11f291e24a0d4e448 = L.popup({"maxWidth": 100});
+
+        
+            var html_80cbedcd3d6cba45feedb9b8a12dd634 = $(`<div id="html_80cbedcd3d6cba45feedb9b8a12dd634" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=(유)동화운수', target=_'blink'>광주광역시 동구 남문로 333(월남동)</a></div>`)[0];
+            popup_1019b8af603252f11f291e24a0d4e448.setContent(html_80cbedcd3d6cba45feedb9b8a12dd634);
+        
+
+        marker_5873be1d32fd2e5673496c4df1adcd55.bindPopup(popup_1019b8af603252f11f291e24a0d4e448)
+        ;
+
+        
+    
+    
+            marker_5873be1d32fd2e5673496c4df1adcd55.bindTooltip(
+                `<div>
+                     (유)동화운수
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91eaff10ca29c92224424a944770fb69 = L.marker(
+                [35.23220044, 126.8887328],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_6308168bfec8eeccff6cc7ccc5b95e3b = L.popup({"maxWidth": 100});
+
+        
+            var html_03c22d7b7bfb624fabe0f9132bf9ce2b = $(`<div id="html_03c22d7b7bfb624fabe0f9132bf9ce2b" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=(유)뉴무등자동차', target=_'blink'>광주광역시 북구 하서로 670(지야동)</a></div>`)[0];
+            popup_6308168bfec8eeccff6cc7ccc5b95e3b.setContent(html_03c22d7b7bfb624fabe0f9132bf9ce2b);
+        
+
+        marker_91eaff10ca29c92224424a944770fb69.bindPopup(popup_6308168bfec8eeccff6cc7ccc5b95e3b)
+        ;
+
+        
+    
+    
+            marker_91eaff10ca29c92224424a944770fb69.bindTooltip(
+                `<div>
+                     (유)뉴무등자동차
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5c926cf051b9bbd8d8f10c5019458c0 = L.marker(
+                [35.17942085, 126.8958244],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_555f841a500cd78fecd0b0e215b0bfc3 = L.popup({"maxWidth": 100});
+
+        
+            var html_2b31f8686c6d69f9534d45ce12f94400 = $(`<div id="html_2b31f8686c6d69f9534d45ce12f94400" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=(유)동원1급자동차정비', target=_'blink'>광주광역시 북구 저불로 56, 106동(용봉동)</a></div>`)[0];
+            popup_555f841a500cd78fecd0b0e215b0bfc3.setContent(html_2b31f8686c6d69f9534d45ce12f94400);
+        
+
+        marker_c5c926cf051b9bbd8d8f10c5019458c0.bindPopup(popup_555f841a500cd78fecd0b0e215b0bfc3)
+        ;
+
+        
+    
+    
+            marker_c5c926cf051b9bbd8d8f10c5019458c0.bindTooltip(
+                `<div>
+                     (유)동원1급자동차정비
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_acdba76346a81419a196488c0a01cd73 = L.marker(
+                [35.206124, 126.8753287],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_2e907a941b8d012489736dbffdb9e1a9 = L.popup({"maxWidth": 100});
+
+        
+            var html_0739aaf2f64acc36d67c70eb341cb708 = $(`<div id="html_0739aaf2f64acc36d67c70eb341cb708" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=(유)신화모터스', target=_'blink'>광주광역시 북구 하서로322번길 24-3(양산동)</a></div>`)[0];
+            popup_2e907a941b8d012489736dbffdb9e1a9.setContent(html_0739aaf2f64acc36d67c70eb341cb708);
+        
+
+        marker_acdba76346a81419a196488c0a01cd73.bindPopup(popup_2e907a941b8d012489736dbffdb9e1a9)
+        ;
+
+        
+    
+    
+            marker_acdba76346a81419a196488c0a01cd73.bindTooltip(
+                `<div>
+                     (유)신화모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a85e9dac02438b6b52f3bb63799f6c3a = L.marker(
+                [35.1592171, 126.910766],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_bab72f52f97f9def9e8301ab40afdd97 = L.popup({"maxWidth": 100});
+
+        
+            var html_bc743ff48ed55f7c5abb4495474d884c = $(`<div id="html_bc743ff48ed55f7c5abb4495474d884c" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=(주)뉴 중흥자동차공업사', target=_'blink'>광주광역시 북구 제봉로 277-1, 324동(중흥동)</a></div>`)[0];
+            popup_bab72f52f97f9def9e8301ab40afdd97.setContent(html_bc743ff48ed55f7c5abb4495474d884c);
+        
+
+        marker_a85e9dac02438b6b52f3bb63799f6c3a.bindPopup(popup_bab72f52f97f9def9e8301ab40afdd97)
+        ;
+
+        
+    
+    
+            marker_a85e9dac02438b6b52f3bb63799f6c3a.bindTooltip(
+                `<div>
+                     (주)뉴 중흥자동차공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_452933e25745592c6d80aa1c12ae06dc = L.marker(
+                [35.1738807, 126.911143],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_e9ee0547ea5e214dfcfd3f587ee0c43d = L.popup({"maxWidth": 100});
+
+        
+            var html_c3a2e284e96f33d771fae08eb75e5ff1 = $(`<div id="html_c3a2e284e96f33d771fae08eb75e5ff1" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=(주)다온알에스', target=_'blink'>광주광역시 북구 용봉로 77(용봉동)</a></div>`)[0];
+            popup_e9ee0547ea5e214dfcfd3f587ee0c43d.setContent(html_c3a2e284e96f33d771fae08eb75e5ff1);
+        
+
+        marker_452933e25745592c6d80aa1c12ae06dc.bindPopup(popup_e9ee0547ea5e214dfcfd3f587ee0c43d)
+        ;
+
+        
+    
+    
+            marker_452933e25745592c6d80aa1c12ae06dc.bindTooltip(
+                `<div>
+                     (주)다온알에스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25e1ee3eb51e2ea3231313147bd2e7ea = L.marker(
+                [35.18449098, 126.870556],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_fc5376964263537ec753b2451f9526f4 = L.popup({"maxWidth": 100});
+
+        
+            var html_9a61cb9571b82f0b8f024864b671a078 = $(`<div id="html_9a61cb9571b82f0b8f024864b671a078" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=(주)아이타이어 자동차공업사(운암점)', target=_'blink'>광주광역시 북구 북문대로 183(운암동)</a></div>`)[0];
+            popup_fc5376964263537ec753b2451f9526f4.setContent(html_9a61cb9571b82f0b8f024864b671a078);
+        
+
+        marker_25e1ee3eb51e2ea3231313147bd2e7ea.bindPopup(popup_fc5376964263537ec753b2451f9526f4)
+        ;
+
+        
+    
+    
+            marker_25e1ee3eb51e2ea3231313147bd2e7ea.bindTooltip(
+                `<div>
+                     (주)아이타이어 자동차공업사(운암점)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0298201187a66857df3b59e36f8500c3 = L.marker(
+                [35.15942875, 126.9045951],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_53e245822d6e598b0328c76b0061f9ac = L.popup({"maxWidth": 100});
+
+        
+            var html_059f880d2213eaab6e4d32e6d7f91640 = $(`<div id="html_059f880d2213eaab6e4d32e6d7f91640" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=(주)아진자동차정비', target=_'blink'>광주광역시 북구 중가로 42-1(유동)</a></div>`)[0];
+            popup_53e245822d6e598b0328c76b0061f9ac.setContent(html_059f880d2213eaab6e4d32e6d7f91640);
+        
+
+        marker_0298201187a66857df3b59e36f8500c3.bindPopup(popup_53e245822d6e598b0328c76b0061f9ac)
+        ;
+
+        
+    
+    
+            marker_0298201187a66857df3b59e36f8500c3.bindTooltip(
+                `<div>
+                     (주)아진자동차정비
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d3ae20410544159c64b9b7f6945ca233 = L.marker(
+                [35.180126, 126.9293718],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_0c6d0930480bc55710fb42e3974984d1 = L.popup({"maxWidth": 100});
+
+        
+            var html_da59c6f213f5e792d3a74770bc3ab3b1 = $(`<div id="html_da59c6f213f5e792d3a74770bc3ab3b1" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=(주)애니카랜드동광주점', target=_'blink'>광주광역시 북구 면앙로139번길 86(두암동)</a></div>`)[0];
+            popup_0c6d0930480bc55710fb42e3974984d1.setContent(html_da59c6f213f5e792d3a74770bc3ab3b1);
+        
+
+        marker_d3ae20410544159c64b9b7f6945ca233.bindPopup(popup_0c6d0930480bc55710fb42e3974984d1)
+        ;
+
+        
+    
+    
+            marker_d3ae20410544159c64b9b7f6945ca233.bindTooltip(
+                `<div>
+                     (주)애니카랜드동광주점
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f6b49cf64c6520722b589bbc5a4527e = L.marker(
+                [35.23273848, 126.888664],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_a3d5a27f9fbdac38fa76c36635f4c7a3 = L.popup({"maxWidth": 100});
+
+        
+            var html_955654ade6e0eed63b94f8dda5da9559 = $(`<div id="html_955654ade6e0eed63b94f8dda5da9559" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=(주)에스지모터스', target=_'blink'>광주광역시 북구 하서로672번길 8(지야동)</a></div>`)[0];
+            popup_a3d5a27f9fbdac38fa76c36635f4c7a3.setContent(html_955654ade6e0eed63b94f8dda5da9559);
+        
+
+        marker_9f6b49cf64c6520722b589bbc5a4527e.bindPopup(popup_a3d5a27f9fbdac38fa76c36635f4c7a3)
+        ;
+
+        
+    
+    
+            marker_9f6b49cf64c6520722b589bbc5a4527e.bindTooltip(
+                `<div>
+                     (주)에스지모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c3464f2a21e40bb79eb42fffb27adc7 = L.marker(
+                [35.23131722, 126.887875],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_3c5589fbcb4af6d635fb49304afaf8e4 = L.popup({"maxWidth": 100});
+
+        
+            var html_6c032a428ad518291747385659443d39 = $(`<div id="html_6c032a428ad518291747385659443d39" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=(주)케이모터스', target=_'blink'>광주광역시 북구 하서로 652-11(지야동)</a></div>`)[0];
+            popup_3c5589fbcb4af6d635fb49304afaf8e4.setContent(html_6c032a428ad518291747385659443d39);
+        
+
+        marker_7c3464f2a21e40bb79eb42fffb27adc7.bindPopup(popup_3c5589fbcb4af6d635fb49304afaf8e4)
+        ;
+
+        
+    
+    
+            marker_7c3464f2a21e40bb79eb42fffb27adc7.bindTooltip(
+                `<div>
+                     (주)케이모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4753783dccd8e81f888c027cec0a4311 = L.marker(
+                [35.23479773, 126.8906808],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_10e625cad02cf6ee04cc22f3eba993c3 = L.popup({"maxWidth": 100});
+
+        
+            var html_8d4dcaadddae5884ee7cfca10a4ee31c = $(`<div id="html_8d4dcaadddae5884ee7cfca10a4ee31c" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=(합)북광주 현대 서비스', target=_'blink'>광주광역시 북구 하서로672번길 37, 외 2필지(용전동)</a></div>`)[0];
+            popup_10e625cad02cf6ee04cc22f3eba993c3.setContent(html_8d4dcaadddae5884ee7cfca10a4ee31c);
+        
+
+        marker_4753783dccd8e81f888c027cec0a4311.bindPopup(popup_10e625cad02cf6ee04cc22f3eba993c3)
+        ;
+
+        
+    
+    
+            marker_4753783dccd8e81f888c027cec0a4311.bindTooltip(
+                `<div>
+                     (합)북광주 현대 서비스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b99e5df19b3f53282220140de24c7825 = L.marker(
+                [35.20374266, 126.8994725],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_5608a2549d98a1a038be8fda8d344289 = L.popup({"maxWidth": 100});
+
+        
+            var html_08eb3427215ddb5b46a92bdd9c8ded32 = $(`<div id="html_08eb3427215ddb5b46a92bdd9c8ded32" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=2U카모터스', target=_'blink'>광주광역시 북구 설죽로 496-7(일곡동)</a></div>`)[0];
+            popup_5608a2549d98a1a038be8fda8d344289.setContent(html_08eb3427215ddb5b46a92bdd9c8ded32);
+        
+
+        marker_b99e5df19b3f53282220140de24c7825.bindPopup(popup_5608a2549d98a1a038be8fda8d344289)
+        ;
+
+        
+    
+    
+            marker_b99e5df19b3f53282220140de24c7825.bindTooltip(
+                `<div>
+                     2U카모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc0f00190a51cf24a28d4ae392e4a571 = L.marker(
+                [35.19529726, 126.9038217],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_a0eec0c33c574b6b94311d44e650dd2c = L.popup({"maxWidth": 100});
+
+        
+            var html_2da95581bad1e3e8e99319b2edb651a8 = $(`<div id="html_2da95581bad1e3e8e99319b2edb651a8" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=31모터스', target=_'blink'>광주광역시 북구 우치로 343(삼각동)</a></div>`)[0];
+            popup_a0eec0c33c574b6b94311d44e650dd2c.setContent(html_2da95581bad1e3e8e99319b2edb651a8);
+        
+
+        marker_cc0f00190a51cf24a28d4ae392e4a571.bindPopup(popup_a0eec0c33c574b6b94311d44e650dd2c)
+        ;
+
+        
+    
+    
+            marker_cc0f00190a51cf24a28d4ae392e4a571.bindTooltip(
+                `<div>
+                     31모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e103f8ab1eb7b4c69ae01ad0d08b5158 = L.marker(
+                [35.15783697, 126.9031418],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_12faafecb45d01f324369dd3b6dcd8f6 = L.popup({"maxWidth": 100});
+
+        
+            var html_fbf1ecb9b23779195d59ad163e6c899c = $(`<div id="html_fbf1ecb9b23779195d59ad163e6c899c" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=CAR TUNE', target=_'blink'>광주광역시 북구 금남로 68-1(유동)</a></div>`)[0];
+            popup_12faafecb45d01f324369dd3b6dcd8f6.setContent(html_fbf1ecb9b23779195d59ad163e6c899c);
+        
+
+        marker_e103f8ab1eb7b4c69ae01ad0d08b5158.bindPopup(popup_12faafecb45d01f324369dd3b6dcd8f6)
+        ;
+
+        
+    
+    
+            marker_e103f8ab1eb7b4c69ae01ad0d08b5158.bindTooltip(
+                `<div>
+                     CAR TUNE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d2c3e890006c0f5a6f3bed58ecd72d0 = L.marker(
+                [35.16190278, 126.9050233],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_021c53b079d325da930dcf8021141df4 = L.popup({"maxWidth": 100});
+
+        
+            var html_ffa37a3b9b310abd9d7fe59bd1e8eafb = $(`<div id="html_ffa37a3b9b310abd9d7fe59bd1e8eafb" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=CSA자동차인테리어학원', target=_'blink'>광주광역시 북구 태봉로 54(신안동)</a></div>`)[0];
+            popup_021c53b079d325da930dcf8021141df4.setContent(html_ffa37a3b9b310abd9d7fe59bd1e8eafb);
+        
+
+        marker_9d2c3e890006c0f5a6f3bed58ecd72d0.bindPopup(popup_021c53b079d325da930dcf8021141df4)
+        ;
+
+        
+    
+    
+            marker_9d2c3e890006c0f5a6f3bed58ecd72d0.bindTooltip(
+                `<div>
+                     CSA자동차인테리어학원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5331a760749b4bd114aa141593d99c03 = L.marker(
+                [35.21719133, 126.8801263],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_cd17d7143016c056604dc2433026d5e2 = L.popup({"maxWidth": 100});
+
+        
+            var html_a48e00950482d62aa24fa0245dd2bd55 = $(`<div id="html_a48e00950482d62aa24fa0245dd2bd55" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=DS모터스포츠', target=_'blink'>광주광역시 북구 양산택지로 138, 1층 103,104호(본촌동)</a></div>`)[0];
+            popup_cd17d7143016c056604dc2433026d5e2.setContent(html_a48e00950482d62aa24fa0245dd2bd55);
+        
+
+        marker_5331a760749b4bd114aa141593d99c03.bindPopup(popup_cd17d7143016c056604dc2433026d5e2)
+        ;
+
+        
+    
+    
+            marker_5331a760749b4bd114aa141593d99c03.bindTooltip(
+                `<div>
+                     DS모터스포츠
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_20a751adf3185a445ec02351487c9a3f = L.marker(
+                [35.17413162, 126.8959528],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_a98689d82e512f565abf569f1540959c = L.popup({"maxWidth": 100});
+
+        
+            var html_60a71f75d73d4f4298e03e55dca9b8b6 = $(`<div id="html_60a71f75d73d4f4298e03e55dca9b8b6" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=H-모터스', target=_'blink'>광주광역시 북구 설죽로 160(용봉동)</a></div>`)[0];
+            popup_a98689d82e512f565abf569f1540959c.setContent(html_60a71f75d73d4f4298e03e55dca9b8b6);
+        
+
+        marker_20a751adf3185a445ec02351487c9a3f.bindPopup(popup_a98689d82e512f565abf569f1540959c)
+        ;
+
+        
+    
+    
+            marker_20a751adf3185a445ec02351487c9a3f.bindTooltip(
+                `<div>
+                     H-모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07a41e146919a6ca6a0b4803d4c6f3ea = L.marker(
+                [35.18339421, 126.8947849],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_72f20530a514197af842c390c73ecb11 = L.popup({"maxWidth": 100});
+
+        
+            var html_cfe14887ec39ff995cc3aee96551714c = $(`<div id="html_cfe14887ec39ff995cc3aee96551714c" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=JJ카클리닉', target=_'blink'>광주광역시 북구 비엔날레로 161(용봉동)</a></div>`)[0];
+            popup_72f20530a514197af842c390c73ecb11.setContent(html_cfe14887ec39ff995cc3aee96551714c);
+        
+
+        marker_07a41e146919a6ca6a0b4803d4c6f3ea.bindPopup(popup_72f20530a514197af842c390c73ecb11)
+        ;
+
+        
+    
+    
+            marker_07a41e146919a6ca6a0b4803d4c6f3ea.bindTooltip(
+                `<div>
+                     JJ카클리닉
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10ff45ed041444b2978b9369e595342d = L.marker(
+                [35.21106328, 126.8783682],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_74bc5da7c7166784aa75441254088f54 = L.popup({"maxWidth": 100});
+
+        
+            var html_497c318a317fccf0a53e48df3ef3e79c = $(`<div id="html_497c318a317fccf0a53e48df3ef3e79c" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=MS골드 모터스', target=_'blink'>광주광역시 북구 양산택지로 51번길 15(양산동)</a></div>`)[0];
+            popup_74bc5da7c7166784aa75441254088f54.setContent(html_497c318a317fccf0a53e48df3ef3e79c);
+        
+
+        marker_10ff45ed041444b2978b9369e595342d.bindPopup(popup_74bc5da7c7166784aa75441254088f54)
+        ;
+
+        
+    
+    
+            marker_10ff45ed041444b2978b9369e595342d.bindTooltip(
+                `<div>
+                     MS골드 모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0407159490b8a359cadf436b54cb9d2 = L.marker(
+                [35.18729729, 126.9065847],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_68536d53b197a9b4458eee32ca783ed6 = L.popup({"maxWidth": 100});
+
+        
+            var html_e3d9e79bab94b2c2734bd2083d1eedf0 = $(`<div id="html_e3d9e79bab94b2c2734bd2083d1eedf0" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=OK공업사', target=_'blink'>광주광역시 북구 서하로 237(오치동)</a></div>`)[0];
+            popup_68536d53b197a9b4458eee32ca783ed6.setContent(html_e3d9e79bab94b2c2734bd2083d1eedf0);
+        
+
+        marker_b0407159490b8a359cadf436b54cb9d2.bindPopup(popup_68536d53b197a9b4458eee32ca783ed6)
+        ;
+
+        
+    
+    
+            marker_b0407159490b8a359cadf436b54cb9d2.bindTooltip(
+                `<div>
+                     OK공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31e0a4ab88aae1c1a0ff48fcca2f7b1d = L.marker(
+                [35.2502515, 126.9273709],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_c6ed6d3a9639e0c44a9598ee851ab54b = L.popup({"maxWidth": 100});
+
+        
+            var html_f5dc116fea8a6c6ceff89a353da27526 = $(`<div id="html_f5dc116fea8a6c6ceff89a353da27526" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=RECCO R', target=_'blink'>광주광역시 북구 하서로 1116(태령동)</a></div>`)[0];
+            popup_c6ed6d3a9639e0c44a9598ee851ab54b.setContent(html_f5dc116fea8a6c6ceff89a353da27526);
+        
+
+        marker_31e0a4ab88aae1c1a0ff48fcca2f7b1d.bindPopup(popup_c6ed6d3a9639e0c44a9598ee851ab54b)
+        ;
+
+        
+    
+    
+            marker_31e0a4ab88aae1c1a0ff48fcca2f7b1d.bindTooltip(
+                `<div>
+                     RECCO R
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5aa6cc1ad2cebe1dea40e86ac2a12b1 = L.marker(
+                [35.17289698, 126.8965249],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_fd0f8754612250956f98aba14abe43c5 = L.popup({"maxWidth": 100});
+
+        
+            var html_48acf934f1462d4484ebe80160906412 = $(`<div id="html_48acf934f1462d4484ebe80160906412" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=THE GARAGE', target=_'blink'>광주광역시 북구 설죽로 142(용봉동)</a></div>`)[0];
+            popup_fd0f8754612250956f98aba14abe43c5.setContent(html_48acf934f1462d4484ebe80160906412);
+        
+
+        marker_a5aa6cc1ad2cebe1dea40e86ac2a12b1.bindPopup(popup_fd0f8754612250956f98aba14abe43c5)
+        ;
+
+        
+    
+    
+            marker_a5aa6cc1ad2cebe1dea40e86ac2a12b1.bindTooltip(
+                `<div>
+                     THE GARAGE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba78e65034f81b2de41de0fe137ea9ea = L.marker(
+                [35.17486417, 126.8825595],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_c3cbd4c369e22f52f1d91735b83a9bbc = L.popup({"maxWidth": 100});
+
+        
+            var html_0c316f344351069ea067cef690eab68b = $(`<div id="html_0c316f344351069ea067cef690eab68b" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=T-STATION', target=_'blink'>광주광역시 북구 북문대로 28(운암동)</a></div>`)[0];
+            popup_c3cbd4c369e22f52f1d91735b83a9bbc.setContent(html_0c316f344351069ea067cef690eab68b);
+        
+
+        marker_ba78e65034f81b2de41de0fe137ea9ea.bindPopup(popup_c3cbd4c369e22f52f1d91735b83a9bbc)
+        ;
+
+        
+    
+    
+            marker_ba78e65034f81b2de41de0fe137ea9ea.bindTooltip(
+                `<div>
+                     T-STATION
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5888295dbf074b9c352d2fe292eed40 = L.marker(
+                [35.16532558, 126.9061613],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_736325829c0db6e9aeefe1e7c17ddc7e = L.popup({"maxWidth": 100});
+
+        
+            var html_11af54b8094ec2b8ead8dcd9061383cd = $(`<div id="html_11af54b8094ec2b8ead8dcd9061383cd" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=T-station 광주역점', target=_'blink'>광주광역시 북구 무등로 205(중흥동)</a></div>`)[0];
+            popup_736325829c0db6e9aeefe1e7c17ddc7e.setContent(html_11af54b8094ec2b8ead8dcd9061383cd);
+        
+
+        marker_c5888295dbf074b9c352d2fe292eed40.bindPopup(popup_736325829c0db6e9aeefe1e7c17ddc7e)
+        ;
+
+        
+    
+    
+            marker_c5888295dbf074b9c352d2fe292eed40.bindTooltip(
+                `<div>
+                     T-station 광주역점
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1fc05b73ba56e0bbe4969a5717af9b4 = L.marker(
+                [35.17145896, 126.902507],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_57846890ab00a820663a0383805227c6 = L.popup({"maxWidth": 100});
+
+        
+            var html_6f5d3709ad8c7fb8ece30eb5d1fb764e = $(`<div id="html_6f5d3709ad8c7fb8ece30eb5d1fb764e" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=Tstation전남대점', target=_'blink'>광주광역시 북구 용봉로 50(신안동)</a></div>`)[0];
+            popup_57846890ab00a820663a0383805227c6.setContent(html_6f5d3709ad8c7fb8ece30eb5d1fb764e);
+        
+
+        marker_e1fc05b73ba56e0bbe4969a5717af9b4.bindPopup(popup_57846890ab00a820663a0383805227c6)
+        ;
+
+        
+    
+    
+            marker_e1fc05b73ba56e0bbe4969a5717af9b4.bindTooltip(
+                `<div>
+                     Tstation전남대점
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_906453e17edd7024eae2f6882bdd056e = L.marker(
+                [35.18424829, 126.9372133],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_7ef9cdd168f041c30a5b7e34186d30fa = L.popup({"maxWidth": 100});
+
+        
+            var html_5fb4f0a7205e6177d7d1f9a157fd1d94 = $(`<div id="html_5fb4f0a7205e6177d7d1f9a157fd1d94" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=각화정비검사(주)', target=_'blink'>광주광역시 북구 동문대로266번길 40, 404동(각화동)</a></div>`)[0];
+            popup_7ef9cdd168f041c30a5b7e34186d30fa.setContent(html_5fb4f0a7205e6177d7d1f9a157fd1d94);
+        
+
+        marker_906453e17edd7024eae2f6882bdd056e.bindPopup(popup_7ef9cdd168f041c30a5b7e34186d30fa)
+        ;
+
+        
+    
+    
+            marker_906453e17edd7024eae2f6882bdd056e.bindTooltip(
+                `<div>
+                     각화정비검사(주)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_61212313fdbc44d1cc119d759bff1153 = L.marker(
+                [35.17141339, 126.9336202],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_ae9e5f4d0ca077e6cbb1a4485767be9e = L.popup({"maxWidth": 100});
+
+        
+            var html_7b9a2b6b74f364613252d03ce0e6b9e3 = $(`<div id="html_7b9a2b6b74f364613252d03ce0e6b9e3" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=강대원카', target=_'blink'>광주광역시 북구 참판로 154(두암동)</a></div>`)[0];
+            popup_ae9e5f4d0ca077e6cbb1a4485767be9e.setContent(html_7b9a2b6b74f364613252d03ce0e6b9e3);
+        
+
+        marker_61212313fdbc44d1cc119d759bff1153.bindPopup(popup_ae9e5f4d0ca077e6cbb1a4485767be9e)
+        ;
+
+        
+    
+    
+            marker_61212313fdbc44d1cc119d759bff1153.bindTooltip(
+                `<div>
+                     강대원카
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_153622f23720985f1e86eda97d4af1b8 = L.marker(
+                [35.20753178, 126.8779195],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_f24ccb66336f7a963fe6f3b1878498c8 = L.popup({"maxWidth": 100});
+
+        
+            var html_248ed8fb490fb198d7a9095bee660138 = $(`<div id="html_248ed8fb490fb198d7a9095bee660138" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=강산모터스', target=_'blink'>광주광역시 북구 연양로95번길 9(양산동)</a></div>`)[0];
+            popup_f24ccb66336f7a963fe6f3b1878498c8.setContent(html_248ed8fb490fb198d7a9095bee660138);
+        
+
+        marker_153622f23720985f1e86eda97d4af1b8.bindPopup(popup_f24ccb66336f7a963fe6f3b1878498c8)
+        ;
+
+        
+    
+    
+            marker_153622f23720985f1e86eda97d4af1b8.bindTooltip(
+                `<div>
+                     강산모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_690a9649ceddc74cc8fbe4ff3c08e876 = L.marker(
+                [35.2234926, 126.8809658],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_68033686b2b2142ef085a111a2417375 = L.popup({"maxWidth": 100});
+
+        
+            var html_e48810cbe56eedc6f2e0c685f992c54c = $(`<div id="html_e48810cbe56eedc6f2e0c685f992c54c" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=건국카클리닉', target=_'blink'>광주광역시 북구 하서로 553(본촌동)</a></div>`)[0];
+            popup_68033686b2b2142ef085a111a2417375.setContent(html_e48810cbe56eedc6f2e0c685f992c54c);
+        
+
+        marker_690a9649ceddc74cc8fbe4ff3c08e876.bindPopup(popup_68033686b2b2142ef085a111a2417375)
+        ;
+
+        
+    
+    
+            marker_690a9649ceddc74cc8fbe4ff3c08e876.bindTooltip(
+                `<div>
+                     건국카클리닉
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_58c243ef0b906903425503bca03da97e = L.marker(
+                [35.16258838, 126.9118654],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_521daaaf25981427088623a2ed99eefe = L.popup({"maxWidth": 100});
+
+        
+            var html_3081d70ac0dbc624f496bb609b6be853 = $(`<div id="html_3081d70ac0dbc624f496bb609b6be853" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=경전카공업사', target=_'blink'>광주광역시 북구 무등로262번길 17(중흥동)</a></div>`)[0];
+            popup_521daaaf25981427088623a2ed99eefe.setContent(html_3081d70ac0dbc624f496bb609b6be853);
+        
+
+        marker_58c243ef0b906903425503bca03da97e.bindPopup(popup_521daaaf25981427088623a2ed99eefe)
+        ;
+
+        
+    
+    
+            marker_58c243ef0b906903425503bca03da97e.bindTooltip(
+                `<div>
+                     경전카공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d12a1508a8e331510b3361393340494 = L.marker(
+                [35.16069114, 126.9116607],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_4c57e3e248505c0c2f6df240fb469155 = L.popup({"maxWidth": 100});
+
+        
+            var html_e033887005d438123a60a448bd72d207 = $(`<div id="html_e033887005d438123a60a448bd72d207" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=계림카센타', target=_'blink'>광주광역시 북구 경양로183번길 18(중흥동)</a></div>`)[0];
+            popup_4c57e3e248505c0c2f6df240fb469155.setContent(html_e033887005d438123a60a448bd72d207);
+        
+
+        marker_7d12a1508a8e331510b3361393340494.bindPopup(popup_4c57e3e248505c0c2f6df240fb469155)
+        ;
+
+        
+    
+    
+            marker_7d12a1508a8e331510b3361393340494.bindTooltip(
+                `<div>
+                     계림카센타
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f280a7fc0f2018fccfd423e1dc986458 = L.marker(
+                [35.17520653, 126.8966319],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_05a4343eaefee2fc82fba631199750ab = L.popup({"maxWidth": 100});
+
+        
+            var html_cc8f4967f31d8e0f41e4f35b0197b92a = $(`<div id="html_cc8f4967f31d8e0f41e4f35b0197b92a" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=고려유통', target=_'blink'>광주광역시 북구 설죽로 174(용봉동)</a></div>`)[0];
+            popup_05a4343eaefee2fc82fba631199750ab.setContent(html_cc8f4967f31d8e0f41e4f35b0197b92a);
+        
+
+        marker_f280a7fc0f2018fccfd423e1dc986458.bindPopup(popup_05a4343eaefee2fc82fba631199750ab)
+        ;
+
+        
+    
+    
+            marker_f280a7fc0f2018fccfd423e1dc986458.bindTooltip(
+                `<div>
+                     고려유통
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5af5b921bc0ced1dd21f6f283570a74e = L.marker(
+                [35.17518408, 126.932563],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_85ea9cfbca192ba757cebdf588b764b7 = L.popup({"maxWidth": 100});
+
+        
+            var html_5fd1bf539103e4df1844b071b927f297 = $(`<div id="html_5fd1bf539103e4df1844b071b927f297" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=고흥카써비스', target=_'blink'>광주광역시 북구 면앙로 192(두암동)</a></div>`)[0];
+            popup_85ea9cfbca192ba757cebdf588b764b7.setContent(html_5fd1bf539103e4df1844b071b927f297);
+        
+
+        marker_5af5b921bc0ced1dd21f6f283570a74e.bindPopup(popup_85ea9cfbca192ba757cebdf588b764b7)
+        ;
+
+        
+    
+    
+            marker_5af5b921bc0ced1dd21f6f283570a74e.bindTooltip(
+                `<div>
+                     고흥카써비스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b8b2bfb3133c147bac59044bb3d3a51c = L.marker(
+                [35.19448874, 126.8773657],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_ecc5662f01c8d234fe8d34e8147d7189 = L.popup({"maxWidth": 100});
+
+        
+            var html_3651a2ba8b23e6e6cf31b7396933316f = $(`<div id="html_3651a2ba8b23e6e6cf31b7396933316f" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=공단카크리닉', target=_'blink'>광주광역시 북구 하서로216번길 2(양산동)</a></div>`)[0];
+            popup_ecc5662f01c8d234fe8d34e8147d7189.setContent(html_3651a2ba8b23e6e6cf31b7396933316f);
+        
+
+        marker_b8b2bfb3133c147bac59044bb3d3a51c.bindPopup(popup_ecc5662f01c8d234fe8d34e8147d7189)
+        ;
+
+        
+    
+    
+            marker_b8b2bfb3133c147bac59044bb3d3a51c.bindTooltip(
+                `<div>
+                     공단카크리닉
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d98fe1ee9c535947818096752661f4d4 = L.marker(
+                [35.17665999, 126.8891184],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_9b68f2cab713eed62137b7e1dbc26af1 = L.popup({"maxWidth": 100});
+
+        
+            var html_fe067ebf261377b08eb2b2517615085c = $(`<div id="html_fe067ebf261377b08eb2b2517615085c" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=공임나라 운암점', target=_'blink'>광주광역시 북구 비엔날레로 54-6(운암동)</a></div>`)[0];
+            popup_9b68f2cab713eed62137b7e1dbc26af1.setContent(html_fe067ebf261377b08eb2b2517615085c);
+        
+
+        marker_d98fe1ee9c535947818096752661f4d4.bindPopup(popup_9b68f2cab713eed62137b7e1dbc26af1)
+        ;
+
+        
+    
+    
+            marker_d98fe1ee9c535947818096752661f4d4.bindTooltip(
+                `<div>
+                     공임나라 운암점
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c53a0ca74284f23b044e33024d945b70 = L.marker(
+                [35.23148715, 126.8875064],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_c008cbf2661e8d83ffa53a98c35eb693 = L.popup({"maxWidth": 100});
+
+        
+            var html_4cf10d91b3d631eac86c67b9808dced9 = $(`<div id="html_4cf10d91b3d631eac86c67b9808dced9" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=광남자동차공업사', target=_'blink'>광주광역시 북구 하서로 652-7(지야동)</a></div>`)[0];
+            popup_c008cbf2661e8d83ffa53a98c35eb693.setContent(html_4cf10d91b3d631eac86c67b9808dced9);
+        
+
+        marker_c53a0ca74284f23b044e33024d945b70.bindPopup(popup_c008cbf2661e8d83ffa53a98c35eb693)
+        ;
+
+        
+    
+    
+            marker_c53a0ca74284f23b044e33024d945b70.bindTooltip(
+                `<div>
+                     광남자동차공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e151e5e02311642a3a956a2b2f69af1 = L.marker(
+                [35.16871887, 126.8974235],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_468777620a4187494ac767a936ac275e = L.popup({"maxWidth": 100});
+
+        
+            var html_0316e97a51c5083b7e987821b234d9f5 = $(`<div id="html_0316e97a51c5083b7e987821b234d9f5" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=광신자동차정비공업사', target=_'blink'>광주광역시 북구 무등로111번길 30, 외3필지(신안동)</a></div>`)[0];
+            popup_468777620a4187494ac767a936ac275e.setContent(html_0316e97a51c5083b7e987821b234d9f5);
+        
+
+        marker_4e151e5e02311642a3a956a2b2f69af1.bindPopup(popup_468777620a4187494ac767a936ac275e)
+        ;
+
+        
+    
+    
+            marker_4e151e5e02311642a3a956a2b2f69af1.bindTooltip(
+                `<div>
+                     광신자동차정비공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_754e8b14808c029231162eae47845983 = L.marker(
+                [35.24269258, 126.8778087],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_8feeb3768a8992a1de35bee4be186526 = L.popup({"maxWidth": 100});
+
+        
+            var html_891fac27a864e6b6d788542024f7b447 = $(`<div id="html_891fac27a864e6b6d788542024f7b447" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=광일카센터', target=_'blink'>광주광역시 북구 삼소로 398(월출동)</a></div>`)[0];
+            popup_8feeb3768a8992a1de35bee4be186526.setContent(html_891fac27a864e6b6d788542024f7b447);
+        
+
+        marker_754e8b14808c029231162eae47845983.bindPopup(popup_8feeb3768a8992a1de35bee4be186526)
+        ;
+
+        
+    
+    
+            marker_754e8b14808c029231162eae47845983.bindTooltip(
+                `<div>
+                     광일카센터
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_debc7c210a0e0155310361b27ce29d1d = L.marker(
+                [35.16287652, 126.9124454],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_e0f5d28da5f5753348466938b7d8d876 = L.popup({"maxWidth": 100});
+
+        
+            var html_86b6c3f77e88fbe4abe425bdfbccb2c2 = $(`<div id="html_86b6c3f77e88fbe4abe425bdfbccb2c2" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=광주용달협회정비사업부', target=_'blink'>광주광역시 북구 독립로349번길 50(중흥동)</a></div>`)[0];
+            popup_e0f5d28da5f5753348466938b7d8d876.setContent(html_86b6c3f77e88fbe4abe425bdfbccb2c2);
+        
+
+        marker_debc7c210a0e0155310361b27ce29d1d.bindPopup(popup_e0f5d28da5f5753348466938b7d8d876)
+        ;
+
+        
+    
+    
+            marker_debc7c210a0e0155310361b27ce29d1d.bindTooltip(
+                `<div>
+                     광주용달협회정비사업부
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_88200ed9201b02f1532febada1d286f8 = L.marker(
+                [35.16273613, 126.9040491],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_f671fdf1af01a3646c701d765a5d561f = L.popup({"maxWidth": 100});
+
+        
+            var html_810d9671bb277c3a943ca7056d34a28a = $(`<div id="html_810d9671bb277c3a943ca7056d34a28a" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=광주카모터스', target=_'blink'>광주광역시 북구 자동차로48번길 50(신안동)</a></div>`)[0];
+            popup_f671fdf1af01a3646c701d765a5d561f.setContent(html_810d9671bb277c3a943ca7056d34a28a);
+        
+
+        marker_88200ed9201b02f1532febada1d286f8.bindPopup(popup_f671fdf1af01a3646c701d765a5d561f)
+        ;
+
+        
+    
+    
+            marker_88200ed9201b02f1532febada1d286f8.bindTooltip(
+                `<div>
+                     광주카모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca4b1c49d9ea86095218f60e50f524e3 = L.marker(
+                [35.16147272, 126.910444],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_553a212ebbb1e2e3273cc64d3d0f97ea = L.popup({"maxWidth": 100});
+
+        
+            var html_bf3787b0a06311dd41bf41dbe9ca3455 = $(`<div id="html_bf3787b0a06311dd41bf41dbe9ca3455" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=광주카서비스', target=_'blink'>광주광역시 북구 제봉로 302-1(중흥동)</a></div>`)[0];
+            popup_553a212ebbb1e2e3273cc64d3d0f97ea.setContent(html_bf3787b0a06311dd41bf41dbe9ca3455);
+        
+
+        marker_ca4b1c49d9ea86095218f60e50f524e3.bindPopup(popup_553a212ebbb1e2e3273cc64d3d0f97ea)
+        ;
+
+        
+    
+    
+            marker_ca4b1c49d9ea86095218f60e50f524e3.bindTooltip(
+                `<div>
+                     광주카서비스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c640f56c46e3dd8dd1c0cbd6bf2a56e = L.marker(
+                [35.15835835, 126.9108132],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_1d33f2a5b2fc60f0fdd963eecfd0dc88 = L.popup({"maxWidth": 100});
+
+        
+            var html_9633ee9704ff294d6ef4295ce04cb02e = $(`<div id="html_9633ee9704ff294d6ef4295ce04cb02e" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=광주카서비스', target=_'blink'>광주광역시 북구 중가로 97-4(중흥동)</a></div>`)[0];
+            popup_1d33f2a5b2fc60f0fdd963eecfd0dc88.setContent(html_9633ee9704ff294d6ef4295ce04cb02e);
+        
+
+        marker_2c640f56c46e3dd8dd1c0cbd6bf2a56e.bindPopup(popup_1d33f2a5b2fc60f0fdd963eecfd0dc88)
+        ;
+
+        
+    
+    
+            marker_2c640f56c46e3dd8dd1c0cbd6bf2a56e.bindTooltip(
+                `<div>
+                     광주카서비스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9454d605141ec3f0b8de2ddcfe867454 = L.marker(
+                [35.16506938, 126.903255],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_8554844b4fbb5e00e8aafe27e85c90ca = L.popup({"maxWidth": 100});
+
+        
+            var html_afb5867e8da6bcb46f7c13fd4def3093 = $(`<div id="html_afb5867e8da6bcb46f7c13fd4def3093" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=광주카센타', target=_'blink'>광주광역시 북구 무등로180번길 11(신안동)</a></div>`)[0];
+            popup_8554844b4fbb5e00e8aafe27e85c90ca.setContent(html_afb5867e8da6bcb46f7c13fd4def3093);
+        
+
+        marker_9454d605141ec3f0b8de2ddcfe867454.bindPopup(popup_8554844b4fbb5e00e8aafe27e85c90ca)
+        ;
+
+        
+    
+    
+            marker_9454d605141ec3f0b8de2ddcfe867454.bindTooltip(
+                `<div>
+                     광주카센타
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c38538290ad8bb41a5855f3d3c74d914 = L.marker(
+                [35.17151093, 126.9030158],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_a3720a6eaa3fec13d2b109f130bfe140 = L.popup({"maxWidth": 100});
+
+        
+            var html_79c0d315a7315c036dc06ada98012d8a = $(`<div id="html_79c0d315a7315c036dc06ada98012d8a" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=그린카서비스', target=_'blink'>광주광역시 북구 용봉로 56(신안동)</a></div>`)[0];
+            popup_a3720a6eaa3fec13d2b109f130bfe140.setContent(html_79c0d315a7315c036dc06ada98012d8a);
+        
+
+        marker_c38538290ad8bb41a5855f3d3c74d914.bindPopup(popup_a3720a6eaa3fec13d2b109f130bfe140)
+        ;
+
+        
+    
+    
+            marker_c38538290ad8bb41a5855f3d3c74d914.bindTooltip(
+                `<div>
+                     그린카서비스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5ca3b38c7effe8ad88d005014d1416a = L.marker(
+                [35.20983531, 126.8800281],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_e908f91122874cb88da56a00db0c7c31 = L.popup({"maxWidth": 100});
+
+        
+            var html_a6feb72d5648b47dd915be8e66a41aa3 = $(`<div id="html_a6feb72d5648b47dd915be8e66a41aa3" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=글로벌모터스', target=_'blink'>광주광역시 북구 양산택지로 40(양산동)</a></div>`)[0];
+            popup_e908f91122874cb88da56a00db0c7c31.setContent(html_a6feb72d5648b47dd915be8e66a41aa3);
+        
+
+        marker_c5ca3b38c7effe8ad88d005014d1416a.bindPopup(popup_e908f91122874cb88da56a00db0c7c31)
+        ;
+
+        
+    
+    
+            marker_c5ca3b38c7effe8ad88d005014d1416a.bindTooltip(
+                `<div>
+                     글로벌모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_27869c992a7ce2499da908449122712b = L.marker(
+                [35.21526472, 126.8976397],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_3530af5e7ace4f7d0e372c0cd30b3dfd = L.popup({"maxWidth": 100});
+
+        
+            var html_417f5fdbd0206f363c591913abc8c0cc = $(`<div id="html_417f5fdbd0206f363c591913abc8c0cc" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=금동현대소형공업사', target=_'blink'>광주광역시 북구 설죽로 623, 313동 2층(일곡동)</a></div>`)[0];
+            popup_3530af5e7ace4f7d0e372c0cd30b3dfd.setContent(html_417f5fdbd0206f363c591913abc8c0cc);
+        
+
+        marker_27869c992a7ce2499da908449122712b.bindPopup(popup_3530af5e7ace4f7d0e372c0cd30b3dfd)
+        ;
+
+        
+    
+    
+            marker_27869c992a7ce2499da908449122712b.bindTooltip(
+                `<div>
+                     금동현대소형공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c07a3cd4426bd1a4306d5b710c412af4 = L.marker(
+                [35.1723285, 126.9077555],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_af15739b653e410dc45cd1c13909d292 = L.popup({"maxWidth": 100});
+
+        
+            var html_0dc4d5d17ba8de89ec4c25fe2dfc534a = $(`<div id="html_0dc4d5d17ba8de89ec4c25fe2dfc534a" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=금오오토자동차공업사', target=_'blink'>광주광역시 북구 용봉로 102(중흥동)</a></div>`)[0];
+            popup_af15739b653e410dc45cd1c13909d292.setContent(html_0dc4d5d17ba8de89ec4c25fe2dfc534a);
+        
+
+        marker_c07a3cd4426bd1a4306d5b710c412af4.bindPopup(popup_af15739b653e410dc45cd1c13909d292)
+        ;
+
+        
+    
+    
+            marker_c07a3cd4426bd1a4306d5b710c412af4.bindTooltip(
+                `<div>
+                     금오오토자동차공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d97eb16c94d28eceebc15677d817b80 = L.marker(
+                [35.16970198, 126.8987115],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_88415588db820e2e000a2e873f5e2f0d = L.popup({"maxWidth": 100});
+
+        
+            var html_4de7a85774b24f84cd1def37ca973944 = $(`<div id="html_4de7a85774b24f84cd1def37ca973944" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=금일카종합센타', target=_'blink'>광주광역시 북구 서암대로132번길 5(신안동)</a></div>`)[0];
+            popup_88415588db820e2e000a2e873f5e2f0d.setContent(html_4de7a85774b24f84cd1def37ca973944);
+        
+
+        marker_3d97eb16c94d28eceebc15677d817b80.bindPopup(popup_88415588db820e2e000a2e873f5e2f0d)
+        ;
+
+        
+    
+    
+            marker_3d97eb16c94d28eceebc15677d817b80.bindTooltip(
+                `<div>
+                     금일카종합센타
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f984f7834d4d6b2947c0dd3d182c4111 = L.marker(
+                [35.1723614, 126.9087519],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_f9e2ec5561774433e4cdf8480e57a010 = L.popup({"maxWidth": 100});
+
+        
+            var html_33bbd2553a62d0165c7a70b9653562b5 = $(`<div id="html_33bbd2553a62d0165c7a70b9653562b5" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=금호부분정비공업사', target=_'blink'>광주광역시 북구 용봉로 110(중흥동)</a></div>`)[0];
+            popup_f9e2ec5561774433e4cdf8480e57a010.setContent(html_33bbd2553a62d0165c7a70b9653562b5);
+        
+
+        marker_f984f7834d4d6b2947c0dd3d182c4111.bindPopup(popup_f9e2ec5561774433e4cdf8480e57a010)
+        ;
+
+        
+    
+    
+            marker_f984f7834d4d6b2947c0dd3d182c4111.bindTooltip(
+                `<div>
+                     금호부분정비공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17669bb93576e9f7f348d614d4643519 = L.marker(
+                [35.16163709, 126.9032478],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_a899981f3f1309df516b86ffe32cb8e5 = L.popup({"maxWidth": 100});
+
+        
+            var html_23ff3788c27669f83c138e4b828d060e = $(`<div id="html_23ff3788c27669f83c138e4b828d060e" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=금호카월드', target=_'blink'>광주광역시 북구 태봉로 37-6(임동)</a></div>`)[0];
+            popup_a899981f3f1309df516b86ffe32cb8e5.setContent(html_23ff3788c27669f83c138e4b828d060e);
+        
+
+        marker_17669bb93576e9f7f348d614d4643519.bindPopup(popup_a899981f3f1309df516b86ffe32cb8e5)
+        ;
+
+        
+    
+    
+            marker_17669bb93576e9f7f348d614d4643519.bindTooltip(
+                `<div>
+                     금호카월드
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d17dbc1731f6b36907d0a07c441f288c = L.marker(
+                [35.18551435, 126.8700526],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_8097630670ce959363cba16d2f62cebc = L.popup({"maxWidth": 100});
+
+        
+            var html_3d54ebdc2b53b484899305353647902c = $(`<div id="html_3d54ebdc2b53b484899305353647902c" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=기능장모터스', target=_'blink'>광주광역시 북구 북문대로 193(동림동)</a></div>`)[0];
+            popup_8097630670ce959363cba16d2f62cebc.setContent(html_3d54ebdc2b53b484899305353647902c);
+        
+
+        marker_d17dbc1731f6b36907d0a07c441f288c.bindPopup(popup_8097630670ce959363cba16d2f62cebc)
+        ;
+
+        
+    
+    
+            marker_d17dbc1731f6b36907d0a07c441f288c.bindTooltip(
+                `<div>
+                     기능장모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_289d0895ad48a500a78834aab24d8639 = L.marker(
+                [35.20895509, 126.8735105],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_2f1ad73ab9d2ba7a5e436291f94f46bc = L.popup({"maxWidth": 100});
+
+        
+            var html_1e13ba287c319d7447a0e7557f279284 = $(`<div id="html_1e13ba287c319d7447a0e7557f279284" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=기아오토큐양산점', target=_'blink'>광주광역시 북구 하서로 381(양산동)</a></div>`)[0];
+            popup_2f1ad73ab9d2ba7a5e436291f94f46bc.setContent(html_1e13ba287c319d7447a0e7557f279284);
+        
+
+        marker_289d0895ad48a500a78834aab24d8639.bindPopup(popup_2f1ad73ab9d2ba7a5e436291f94f46bc)
+        ;
+
+        
+    
+    
+            marker_289d0895ad48a500a78834aab24d8639.bindTooltip(
+                `<div>
+                     기아오토큐양산점
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_781e5e207c5383d03219f83ed3ed9823 = L.marker(
+                [35.17243885, 126.8615298],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_b551b62b116eda8a5a322e26c07875c4 = L.popup({"maxWidth": 100});
+
+        
+            var html_df6e07d85d5b43569c3eefc7c4c6bcdd = $(`<div id="html_df6e07d85d5b43569c3eefc7c4c6bcdd" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=김스오토케어', target=_'blink'>광주광역시 북구 하남대로 629(동림동)</a></div>`)[0];
+            popup_b551b62b116eda8a5a322e26c07875c4.setContent(html_df6e07d85d5b43569c3eefc7c4c6bcdd);
+        
+
+        marker_781e5e207c5383d03219f83ed3ed9823.bindPopup(popup_b551b62b116eda8a5a322e26c07875c4)
+        ;
+
+        
+    
+    
+            marker_781e5e207c5383d03219f83ed3ed9823.bindTooltip(
+                `<div>
+                     김스오토케어
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c2464ccd0b7bd91fbc53643d44ada8d5 = L.marker(
+                [35.217213, 126.8788369],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_07be0086c8b87a43db24242b44923ae8 = L.popup({"maxWidth": 100});
+
+        
+            var html_95f62216f8ff46e496b89ae6838ecb14 = $(`<div id="html_95f62216f8ff46e496b89ae6838ecb14" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=나의 자동차', target=_'blink'>광주광역시 북구 양산택지로 149(본촌동)</a></div>`)[0];
+            popup_07be0086c8b87a43db24242b44923ae8.setContent(html_95f62216f8ff46e496b89ae6838ecb14);
+        
+
+        marker_c2464ccd0b7bd91fbc53643d44ada8d5.bindPopup(popup_07be0086c8b87a43db24242b44923ae8)
+        ;
+
+        
+    
+    
+            marker_c2464ccd0b7bd91fbc53643d44ada8d5.bindTooltip(
+                `<div>
+                     나의 자동차
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e80c265dc2e96db3d6d2247f1390d38 = L.marker(
+                [35.16169696, 126.9061374],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_468fb9155f0dfbdc59a65c686010206f = L.popup({"maxWidth": 100});
+
+        
+            var html_cb24482cc430105f1d38c3f03c7ffd46 = $(`<div id="html_cb24482cc430105f1d38c3f03c7ffd46" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=남광카센타', target=_'blink'>광주광역시 북구 경양로119번길 10-10(신안동)</a></div>`)[0];
+            popup_468fb9155f0dfbdc59a65c686010206f.setContent(html_cb24482cc430105f1d38c3f03c7ffd46);
+        
+
+        marker_9e80c265dc2e96db3d6d2247f1390d38.bindPopup(popup_468fb9155f0dfbdc59a65c686010206f)
+        ;
+
+        
+    
+    
+            marker_9e80c265dc2e96db3d6d2247f1390d38.bindTooltip(
+                `<div>
+                     남광카센타
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f6fe855a35e286cb14b97182da5114e = L.marker(
+                [35.19958863, 126.9017134],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_82b8b3fc1beea697673387d1d4177acd = L.popup({"maxWidth": 100});
+
+        
+            var html_231a452bd85fd46df3db8d5ea9b8eb6a = $(`<div id="html_231a452bd85fd46df3db8d5ea9b8eb6a" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=남양자동차공업사', target=_'blink'>광주광역시 북구 송해로 10(삼각동)</a></div>`)[0];
+            popup_82b8b3fc1beea697673387d1d4177acd.setContent(html_231a452bd85fd46df3db8d5ea9b8eb6a);
+        
+
+        marker_8f6fe855a35e286cb14b97182da5114e.bindPopup(popup_82b8b3fc1beea697673387d1d4177acd)
+        ;
+
+        
+    
+    
+            marker_8f6fe855a35e286cb14b97182da5114e.bindTooltip(
+                `<div>
+                     남양자동차공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25712d27f8007ca8ca28a23fb6441c7e = L.marker(
+                [35.16275078, 126.9114581],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_d179b75dfe0382e90d85f4ee2afc847b = L.popup({"maxWidth": 100});
+
+        
+            var html_1010e8c4716d4385a42ae37904be45bc = $(`<div id="html_1010e8c4716d4385a42ae37904be45bc" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=남일자동차공업사', target=_'blink'>광주광역시 북구 무등로262번길 16(중흥동)</a></div>`)[0];
+            popup_d179b75dfe0382e90d85f4ee2afc847b.setContent(html_1010e8c4716d4385a42ae37904be45bc);
+        
+
+        marker_25712d27f8007ca8ca28a23fb6441c7e.bindPopup(popup_d179b75dfe0382e90d85f4ee2afc847b)
+        ;
+
+        
+    
+    
+            marker_25712d27f8007ca8ca28a23fb6441c7e.bindTooltip(
+                `<div>
+                     남일자동차공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3978911ea1faa8c703bd2126c34f5ed8 = L.marker(
+                [35.16272329, 126.9129543],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_e22a6c88161a347868ffef0cf10af78b = L.popup({"maxWidth": 100});
+
+        
+            var html_7d9bfa068b24004bd8bb05a9dba3e24d = $(`<div id="html_7d9bfa068b24004bd8bb05a9dba3e24d" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=노르딕', target=_'blink'>광주광역시 북구 무등로 272-7(중흥동)</a></div>`)[0];
+            popup_e22a6c88161a347868ffef0cf10af78b.setContent(html_7d9bfa068b24004bd8bb05a9dba3e24d);
+        
+
+        marker_3978911ea1faa8c703bd2126c34f5ed8.bindPopup(popup_e22a6c88161a347868ffef0cf10af78b)
+        ;
+
+        
+    
+    
+            marker_3978911ea1faa8c703bd2126c34f5ed8.bindTooltip(
+                `<div>
+                     노르딕
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a70f70400cb5a630477db8e0fbca04d8 = L.marker(
+                [35.21974235, 126.8795055],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_9313cd66596a22ba123691eeed7bf908 = L.popup({"maxWidth": 100});
+
+        
+            var html_d12f2289708275aa2defdd6e334ff8b5 = $(`<div id="html_d12f2289708275aa2defdd6e334ff8b5" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=뉴동광카프라자', target=_'blink'>광주광역시 북구 본촌마을길 98(본촌동)</a></div>`)[0];
+            popup_9313cd66596a22ba123691eeed7bf908.setContent(html_d12f2289708275aa2defdd6e334ff8b5);
+        
+
+        marker_a70f70400cb5a630477db8e0fbca04d8.bindPopup(popup_9313cd66596a22ba123691eeed7bf908)
+        ;
+
+        
+    
+    
+            marker_a70f70400cb5a630477db8e0fbca04d8.bindTooltip(
+                `<div>
+                     뉴동광카프라자
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_086132eb454b314ccf6939771ab503b3 = L.marker(
+                [35.16209753, 126.9111593],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_46072eeda83c30be4a0557116781f46a = L.popup({"maxWidth": 100});
+
+        
+            var html_94995e5a6dfe430b633edc79a95e99df = $(`<div id="html_94995e5a6dfe430b633edc79a95e99df" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=뉴선일공업사', target=_'blink'>광주광역시 북구 무등로262번길 32(중흥동)</a></div>`)[0];
+            popup_46072eeda83c30be4a0557116781f46a.setContent(html_94995e5a6dfe430b633edc79a95e99df);
+        
+
+        marker_086132eb454b314ccf6939771ab503b3.bindPopup(popup_46072eeda83c30be4a0557116781f46a)
+        ;
+
+        
+    
+    
+            marker_086132eb454b314ccf6939771ab503b3.bindTooltip(
+                `<div>
+                     뉴선일공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9790ce367873e20328b9cef9bc07f363 = L.marker(
+                [35.16480161, 126.8965211],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_8a0ee659cad64dea12fb05643b9f0979 = L.popup({"maxWidth": 100});
+
+        
+            var html_e21f4a53b5b208a5704555b4f62d83e2 = $(`<div id="html_e21f4a53b5b208a5704555b4f62d83e2" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=뉴오정헤드', target=_'blink'>광주광역시 북구 서림로81번길 11(임동)</a></div>`)[0];
+            popup_8a0ee659cad64dea12fb05643b9f0979.setContent(html_e21f4a53b5b208a5704555b4f62d83e2);
+        
+
+        marker_9790ce367873e20328b9cef9bc07f363.bindPopup(popup_8a0ee659cad64dea12fb05643b9f0979)
+        ;
+
+        
+    
+    
+            marker_9790ce367873e20328b9cef9bc07f363.bindTooltip(
+                `<div>
+                     뉴오정헤드
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82eae3380d69777296deb390236f72d9 = L.marker(
+                [35.17636982, 126.8831453],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_3f2821731f38c531cc988a171fe7683c = L.popup({"maxWidth": 100});
+
+        
+            var html_9eeb19ad2c5325fc97fa6be628a7a0ba = $(`<div id="html_9eeb19ad2c5325fc97fa6be628a7a0ba" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=다이알자동차공업사', target=_'blink'>광주광역시 북구 금호로 112(운암동)</a></div>`)[0];
+            popup_3f2821731f38c531cc988a171fe7683c.setContent(html_9eeb19ad2c5325fc97fa6be628a7a0ba);
+        
+
+        marker_82eae3380d69777296deb390236f72d9.bindPopup(popup_3f2821731f38c531cc988a171fe7683c)
+        ;
+
+        
+    
+    
+            marker_82eae3380d69777296deb390236f72d9.bindTooltip(
+                `<div>
+                     다이알자동차공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6332d1925830f52d6b82ddc847b20e87 = L.marker(
+                [35.16332305, 126.9144607],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_9daf1ccaeb46abb9e89e4045f0168cf8 = L.popup({"maxWidth": 100});
+
+        
+            var html_b80f11dfc578b3ec07a0a0e39b3c467f = $(`<div id="html_b80f11dfc578b3ec07a0a0e39b3c467f" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=달구지모터스', target=_'blink'>광주광역시 북구 독립로367번길 15(중흥동)</a></div>`)[0];
+            popup_9daf1ccaeb46abb9e89e4045f0168cf8.setContent(html_b80f11dfc578b3ec07a0a0e39b3c467f);
+        
+
+        marker_6332d1925830f52d6b82ddc847b20e87.bindPopup(popup_9daf1ccaeb46abb9e89e4045f0168cf8)
+        ;
+
+        
+    
+    
+            marker_6332d1925830f52d6b82ddc847b20e87.bindTooltip(
+                `<div>
+                     달구지모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aeac15388f56139d2513991096d2cb29 = L.marker(
+                [35.17056742, 126.9328761],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_96f0e35cde3df8e858792c9049e19b4f = L.popup({"maxWidth": 100});
+
+        
+            var html_1961fcb182d08da14258003fbd5d92c6 = $(`<div id="html_1961fcb182d08da14258003fbd5d92c6" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=달구지카사랑', target=_'blink'>광주광역시 북구 군왕로 104(두암동)</a></div>`)[0];
+            popup_96f0e35cde3df8e858792c9049e19b4f.setContent(html_1961fcb182d08da14258003fbd5d92c6);
+        
+
+        marker_aeac15388f56139d2513991096d2cb29.bindPopup(popup_96f0e35cde3df8e858792c9049e19b4f)
+        ;
+
+        
+    
+    
+            marker_aeac15388f56139d2513991096d2cb29.bindTooltip(
+                `<div>
+                     달구지카사랑
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d06e7cf438b29f1136acf2b77eb1138e = L.marker(
+                [35.1582164, 126.9064173],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_6d2a09c82ac2712422645a26ced60a84 = L.popup({"maxWidth": 100});
+
+        
+            var html_c27a4c8817e0c9c3536867e7a3a7c0cc = $(`<div id="html_c27a4c8817e0c9c3536867e7a3a7c0cc" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=달려라경정비', target=_'blink'>광주광역시 북구 경열로212번길 4(유동)</a></div>`)[0];
+            popup_6d2a09c82ac2712422645a26ced60a84.setContent(html_c27a4c8817e0c9c3536867e7a3a7c0cc);
+        
+
+        marker_d06e7cf438b29f1136acf2b77eb1138e.bindPopup(popup_6d2a09c82ac2712422645a26ced60a84)
+        ;
+
+        
+    
+    
+            marker_d06e7cf438b29f1136acf2b77eb1138e.bindTooltip(
+                `<div>
+                     달려라경정비
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0e7445ce94d2bade27d8e523979fee6 = L.marker(
+                [35.18954973, 126.9027437],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_c7208fc2c6ff9b0431adadb0b694bbff = L.popup({"maxWidth": 100});
+
+        
+            var html_eec62d6d9caed71b29270903bb5a81f6 = $(`<div id="html_eec62d6d9caed71b29270903bb5a81f6" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=대광공업사', target=_'blink'>광주광역시 북구 우치로275번길 50(오치동)</a></div>`)[0];
+            popup_c7208fc2c6ff9b0431adadb0b694bbff.setContent(html_eec62d6d9caed71b29270903bb5a81f6);
+        
+
+        marker_b0e7445ce94d2bade27d8e523979fee6.bindPopup(popup_c7208fc2c6ff9b0431adadb0b694bbff)
+        ;
+
+        
+    
+    
+            marker_b0e7445ce94d2bade27d8e523979fee6.bindTooltip(
+                `<div>
+                     대광공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_acf0b9c9db1614922f22c90457ea474c = L.marker(
+                [35.15817793, 126.9094109],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_54b54b0e58bb651f2ea156f9b6535741 = L.popup({"maxWidth": 100});
+
+        
+            var html_65d95c353722c85608edf5c7a4aa5116 = $(`<div id="html_65d95c353722c85608edf5c7a4aa5116" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=대광종합카센터', target=_'blink'>광주광역시 북구 버들로 19(유동)</a></div>`)[0];
+            popup_54b54b0e58bb651f2ea156f9b6535741.setContent(html_65d95c353722c85608edf5c7a4aa5116);
+        
+
+        marker_acf0b9c9db1614922f22c90457ea474c.bindPopup(popup_54b54b0e58bb651f2ea156f9b6535741)
+        ;
+
+        
+    
+    
+            marker_acf0b9c9db1614922f22c90457ea474c.bindTooltip(
+                `<div>
+                     대광종합카센터
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e599828b92b3cb73e7de999d67970f5 = L.marker(
+                [35.16416914, 126.9105729],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_a0e14d36ad7d817f73cf0187f3adbd42 = L.popup({"maxWidth": 100});
+
+        
+            var html_4d235499fe6f45c9d385b5664b12caea = $(`<div id="html_4d235499fe6f45c9d385b5664b12caea" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=대도모터스', target=_'blink'>광주광역시 북구 무등로 247(중흥동)</a></div>`)[0];
+            popup_a0e14d36ad7d817f73cf0187f3adbd42.setContent(html_4d235499fe6f45c9d385b5664b12caea);
+        
+
+        marker_4e599828b92b3cb73e7de999d67970f5.bindPopup(popup_a0e14d36ad7d817f73cf0187f3adbd42)
+        ;
+
+        
+    
+    
+            marker_4e599828b92b3cb73e7de999d67970f5.bindTooltip(
+                `<div>
+                     대도모터스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80cda87c736b85ec04db5e2cf873b4b0 = L.marker(
+                [35.15846548, 126.9089417],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_1fd07742c485c3a7378b7f74f3f8c7a8 = L.popup({"maxWidth": 100});
+
+        
+            var html_ba13b7455f8a1357dadaa8432cf4dd34 = $(`<div id="html_ba13b7455f8a1357dadaa8432cf4dd34" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=대명써비스', target=_'blink'>광주광역시 북구 중가로 82-1(중흥동)</a></div>`)[0];
+            popup_1fd07742c485c3a7378b7f74f3f8c7a8.setContent(html_ba13b7455f8a1357dadaa8432cf4dd34);
+        
+
+        marker_80cda87c736b85ec04db5e2cf873b4b0.bindPopup(popup_1fd07742c485c3a7378b7f74f3f8c7a8)
+        ;
+
+        
+    
+    
+            marker_80cda87c736b85ec04db5e2cf873b4b0.bindTooltip(
+                `<div>
+                     대명써비스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c78b8d16ae648d816bf2574703c2b63b = L.marker(
+                [35.17743705, 126.9278999],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_7c52c38cd22c18a50cf3989b465ce116 = L.popup({"maxWidth": 100});
+
+        
+            var html_c32be862631d948199cfc92547af4e4d = $(`<div id="html_c32be862631d948199cfc92547af4e4d" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=대산카프라자', target=_'blink'>광주광역시 북구 면앙로139번길 22(두암동)</a></div>`)[0];
+            popup_7c52c38cd22c18a50cf3989b465ce116.setContent(html_c32be862631d948199cfc92547af4e4d);
+        
+
+        marker_c78b8d16ae648d816bf2574703c2b63b.bindPopup(popup_7c52c38cd22c18a50cf3989b465ce116)
+        ;
+
+        
+    
+    
+            marker_c78b8d16ae648d816bf2574703c2b63b.bindTooltip(
+                `<div>
+                     대산카프라자
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af258b602aac9706c5b1072efa3df87a = L.marker(
+                [35.20894616, 126.8801506],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_ea6e651643c74c72264b9b08f139a684 = L.popup({"maxWidth": 100});
+
+        
+            var html_d646a91987c367b7b9681e88e87f3c69 = $(`<div id="html_d646a91987c367b7b9681e88e87f3c69" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=대성모터스 손세차', target=_'blink'>광주광역시 북구 연양로105번길 30(양산동)</a></div>`)[0];
+            popup_ea6e651643c74c72264b9b08f139a684.setContent(html_d646a91987c367b7b9681e88e87f3c69);
+        
+
+        marker_af258b602aac9706c5b1072efa3df87a.bindPopup(popup_ea6e651643c74c72264b9b08f139a684)
+        ;
+
+        
+    
+    
+            marker_af258b602aac9706c5b1072efa3df87a.bindTooltip(
+                `<div>
+                     대성모터스 손세차
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a550774ff6cdf25a0be39faade8dac17 = L.marker(
+                [35.18439968, 126.9073801],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_22884183c7367d19174c4d99fc15ef6a = L.popup({"maxWidth": 100});
+
+        
+            var html_48ab6bb1a1979af0f334b3a3552cce3f = $(`<div id="html_48ab6bb1a1979af0f334b3a3552cce3f" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=대성카센타', target=_'blink'>광주광역시 북구 천지인로 79(오치동)</a></div>`)[0];
+            popup_22884183c7367d19174c4d99fc15ef6a.setContent(html_48ab6bb1a1979af0f334b3a3552cce3f);
+        
+
+        marker_a550774ff6cdf25a0be39faade8dac17.bindPopup(popup_22884183c7367d19174c4d99fc15ef6a)
+        ;
+
+        
+    
+    
+            marker_a550774ff6cdf25a0be39faade8dac17.bindTooltip(
+                `<div>
+                     대성카센타
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf09fef763b8b16fd62810dbb927a830 = L.marker(
+                [35.17148286, 126.9011949],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_4da6237bbbdc754b379dd68536142e77 = L.popup({"maxWidth": 100});
+
+        
+            var html_b3448a81a32c8353953dbf2fd3c5b9db = $(`<div id="html_b3448a81a32c8353953dbf2fd3c5b9db" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=대승자동차공업사', target=_'blink'>광주광역시 북구 용봉로 38-1(신안동)</a></div>`)[0];
+            popup_4da6237bbbdc754b379dd68536142e77.setContent(html_b3448a81a32c8353953dbf2fd3c5b9db);
+        
+
+        marker_cf09fef763b8b16fd62810dbb927a830.bindPopup(popup_4da6237bbbdc754b379dd68536142e77)
+        ;
+
+        
+    
+    
+            marker_cf09fef763b8b16fd62810dbb927a830.bindTooltip(
+                `<div>
+                     대승자동차공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dcfdc3a9e2657cccda8199e948f0a4fd = L.marker(
+                [35.17046776, 126.8990129],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_f63357f353712a9023be251b3205b66d = L.popup({"maxWidth": 100});
+
+        
+            var html_95dee88b3f8194dc858c03a27bd30a2a = $(`<div id="html_95dee88b3f8194dc858c03a27bd30a2a" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=대신자동차공업사', target=_'blink'>광주광역시 북구 서암대로131번길 6(신안동)</a></div>`)[0];
+            popup_f63357f353712a9023be251b3205b66d.setContent(html_95dee88b3f8194dc858c03a27bd30a2a);
+        
+
+        marker_dcfdc3a9e2657cccda8199e948f0a4fd.bindPopup(popup_f63357f353712a9023be251b3205b66d)
+        ;
+
+        
+    
+    
+            marker_dcfdc3a9e2657cccda8199e948f0a4fd.bindTooltip(
+                `<div>
+                     대신자동차공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9bdc0c7f20abb2423473f685331543a2 = L.marker(
+                [35.17149906, 126.9018272],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_5f7142a5b6f91584be486d15b66c5dbf = L.popup({"maxWidth": 100});
+
+        
+            var html_fddf53990537ae7144ef1718b23cea7c = $(`<div id="html_fddf53990537ae7144ef1718b23cea7c" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=대양자동차공업사', target=_'blink'>광주광역시 북구 용봉로 42-1(신안동)</a></div>`)[0];
+            popup_5f7142a5b6f91584be486d15b66c5dbf.setContent(html_fddf53990537ae7144ef1718b23cea7c);
+        
+
+        marker_9bdc0c7f20abb2423473f685331543a2.bindPopup(popup_5f7142a5b6f91584be486d15b66c5dbf)
+        ;
+
+        
+    
+    
+            marker_9bdc0c7f20abb2423473f685331543a2.bindTooltip(
+                `<div>
+                     대양자동차공업사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f02b89619fb464dc1cc6dd5a398b6856 = L.marker(
+                [35.23303324, 126.8898689],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+        var popup_debad069ec69dce57885adf7cc18f1bb = L.popup({"maxWidth": 100});
+
+        
+            var html_20d8d33f53405e42d32bfbc18374e6b9 = $(`<div id="html_20d8d33f53405e42d32bfbc18374e6b9" style="width: 100.0%; height: 100.0%;"><a href='https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=대왕자동차정비서비스', target=_'blink'>광주광역시 북구 하서로672번길 18-7(지야동)</a></div>`)[0];
+            popup_debad069ec69dce57885adf7cc18f1bb.setContent(html_20d8d33f53405e42d32bfbc18374e6b9);
+        
+
+        marker_f02b89619fb464dc1cc6dd5a398b6856.bindPopup(popup_debad069ec69dce57885adf7cc18f1bb)
+        ;
+
+        
+    
+    
+            marker_f02b89619fb464dc1cc6dd5a398b6856.bindTooltip(
+                `<div>
+                     대왕자동차정비서비스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_79eb8099be4c56e6726976b972846c22 = L.marker(
+                [35.161894610275986, 126.90426748208054],
+                {}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+    
+            var icon_968b819e43bfab165c93a076ab7b3cf4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_79eb8099be4c56e6726976b972846c22.setIcon(icon_968b819e43bfab165c93a076ab7b3cf4);
+        
+    
+        var popup_24b36f056dcaebe0b09c7f70c2639269 = L.popup({"maxWidth": 200});
+
+        
+            var html_959b59d42b042ab0ac8380b2b25ba692 = $(`<div id="html_959b59d42b042ab0ac8380b2b25ba692" style="width: 100.0%; height: 100.0%;">광주광역시 북구 신안동 162-1</div>`)[0];
+            popup_24b36f056dcaebe0b09c7f70c2639269.setContent(html_959b59d42b042ab0ac8380b2b25ba692);
+        
+
+        marker_79eb8099be4c56e6726976b972846c22.bindPopup(popup_24b36f056dcaebe0b09c7f70c2639269)
+        ;
+
+        
+    
+    
+            marker_79eb8099be4c56e6726976b972846c22.bindTooltip(
+                `<div>
+                     사고위치
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_aea5472dbbaceb1927b107a6b954ae3c = L.circleMarker(
+                [35.161894610275986, 126.90426748208054],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "ffffff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 200, "stroke": true, "weight": 3}
+            ).addTo(map_9b7625fae7a12671ff5d59528e8518cf);
+        
+</script>
