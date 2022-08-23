@@ -1,0 +1,64 @@
+특정 좌표 지정 후 주변 n개의 마커만 표시 
+
+n개의 카센터의 정보표시 
+ex)리뷰 평점 전화번호
+
+<script>
+    // 일정한 범위내 마커 표출 기능 구현 (leaflet)
+    var map = map_8cf23e701e51cc7e783ad78eb04bbcfe;
+    var markerList = [];
+    var markerState = false;
+    var zoom = map.getZoom(); 
+    var center = map.getCenter();
+    
+    init();
+    function init() {
+        map.eachLayer(function (layer) { 
+            if(layer instanceof L.Marker){
+                markerList.push(layer);
+                console.log(layer);
+            }
+        });
+        removeLayer();
+    }
+
+    function addLayer() {
+        markerList.map((marker) => {
+            const centerLat = center.lat;
+            const centerLng = center.lng;
+            const lat = marker._latlng.lat;
+            const lng = marker._latlng.lng;
+            if(Math.sqrt(Math.pow((centerLat-lat), 2) + Math.pow((centerLng-lng), 2)) <= 0.02 ){
+                map.addLayer(marker);
+            }
+        });
+    }
+    
+    function removeLayer() {
+        markerList.map((marker) => map.removeLayer(marker));
+    }
+
+    function onMapZoomEnd() {
+        zoom = map.getZoom();
+        center = map.getCenter();
+        if(zoom >= 15 && markerState == false){
+            addLayer();
+            markerState = true;
+        }else if (zoom < 15 && markerState == true){
+            removeLayer();
+            markerState = false;
+        }
+    }
+
+    function onMapDrageEnd () {
+        center = map.getCenter();
+        if(zoom >= 15 && markerState == true){
+            removeLayer();
+            addLayer();
+        }
+    }
+
+    map.on('zoomend', onMapZoomEnd);
+    map.on('dragend', onMapDrageEnd);
+</script>
+
