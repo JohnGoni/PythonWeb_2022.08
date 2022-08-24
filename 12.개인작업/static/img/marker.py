@@ -11,13 +11,15 @@ from selenium import webdriver
 
 df = pd.read_csv('./광주_자동차정비업체.csv')
 map = folium.Map(location=[df.위도.mean(), df.경도.mean()], zoom_start=17,
-max_bounds = True,
+max_bounds=True,
 min_zoom=17,
 max_zoom=17,
 min_lat=35.1615,
 max_lat=35.1615,
 min_lon=126.9042,
-max_lon=126.9042)
+max_lon=126.9042,
+zoom_control=False,
+no_touch=True)
 for i in df.index:
     folium.Marker(
         location=[df.위도[i], df.경도[i]],

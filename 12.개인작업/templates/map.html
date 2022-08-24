@@ -12,13 +12,39 @@
     <div class="row">
         <div class="col-1"></div>
         <div class="col-10">
-            <div class="d-block w-100">
+            <div class="d-block w-100" align="center">
                 <iframe src="{{url_for('static', filename='img/광주시_자동차정비업체.html', q=mtime)}}" 
-                        frameborder="1" width="800" height="500"></iframe>
+                        frameborder="1" width="800" height="500" scrolling="no"></iframe>
             </div>
         </div>
         <div class="col-1"></div>
     </div>
+    <section>
+        <article>
+            <table border="1" width="800" height="150" bordercolor="black" align="center">
+                <tr align="center" bgcolor="white">
+                    <th>업체명</th>
+                    <th>도로명주소</th>
+                    <th>전화번호</th>
+                </tr>
+                <tr>
+                    <td>광주카모터스</td>
+                    <td>광주광역시 북구 자동차로 48번길 50(신안동)</td>
+                    <td>062-528-8966</td>
+                </tr>
+                <tr >
+                    <td>금호카월드</td>
+                    <td>광주광역시 북구 태봉로 37-6(임동)</td>
+                    <td>062-526-4480</td>
+                </tr>
+                <tr>
+                    <td>남광카센타</td>
+                    <td>광주광역시 북구 경양로 119번길 10-10(신안동)</td>
+                    <td>062-522-4994</td>
+                </tr>
+            </table>
+        </article>
+    </section>
 {% endblock %}
 Footer
 © 2022 GitHub, Inc.
