@@ -1,0 +1,626 @@
+{% extends "base.html" %}
+{% block title %}지도 표시{% endblock %}
+{% block additional_head %}
+    <style>
+        td { text-align: center; }
+    </style>
+{% endblock %}
+{% block subtitle %}
+    <strong>자동차정비업체</strong>
+{% endblock %}
+{% block content %}
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="d-block w-100" align="center">
+                <iframe src="{{url_for('static', filename='img/마커/마커0.html', q=mtime)}}" 
+                        frameborder="1" width="600" height="500" scrolling="no"></iframe>
+            </div>
+        </div>
+        <div class="col-1"></div>
+    </div>
+    <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+        overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+        font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+        .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+        </style>
+        <table class="tg" align="center">
+        <thead>
+        <tr>
+            <th class="tg-0pky">장소</th>
+            <th class="tg-0pky">도로명주소</th>
+            <th class="tg-0pky">전화번호</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="tg-0pky">일이자동차공업사</td>
+            <td class="tg-0pky"><A href="../static/img/마커0.html", target=_'blink'>광주광역시 동구 산수길35번길 36-2(계림동)</A></td>
+            <td class="tg-0pky">062-226-0862</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">환영공업사</td>
+            <td class="tg-0pky">광주광역시 동구 경양로 366(산수동)</td>
+            <td class="tg-0pky">062-232-6340</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">붕붕자동차공업사</td>
+            <td class="tg-0pky">광주광역시 동구 필문대로 239(동명동)</td>
+            <td class="tg-0pky">062-228-7633</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">아성자동차공업사</td>
+            <td class="tg-0pky">광주광역시 동구 지산로 45(지산동)</td>
+            <td class="tg-0pky">062-226-1853</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">화랑자동차공업사</td>
+            <td class="tg-0pky">광주광역시 동구 중흥로 198(계림동)</td>
+            <td class="tg-0pky">062-522-6254</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">현대자동차 산수점</td>
+            <td class="tg-0pky">광주광역시 동구 필문대로 112(산수동)</td>
+            <td class="tg-0pky">062-528-8572</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">타이어프로 종원카센타</td>
+            <td class="tg-0pky">광주광역시 동구 남문로 639(소태동)</td>
+            <td class="tg-0pky">062-228-5454</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">남일자동차공업사</td>
+            <td class="tg-0pky">광주광역시 동구 경양로 342(산수동)</td>
+            <td class="tg-0pky">062-228-0291</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">도움부분정비공업사</td>
+            <td class="tg-0pky">광주광역시 동구 천변좌로 666(용산동)</td>
+            <td class="tg-0pky">062-234-9483</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">2U카모터스</td>
+            <td class="tg-0pky">광주광역시 동구 중흥로 229(계림동)</td>
+            <td class="tg-0pky">062-576-2323</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">대명카센타</td>
+            <td class="tg-0pky">광주광역시 동구 경양로243번길 25(계림동)</td>
+            <td class="tg-0pky">062-224-1610</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">우리카부분정비공업사</td>
+            <td class="tg-0pky">광주광역시 동구 남문로 594-11(소태동)</td>
+            <td class="tg-0pky">062-222-8555</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">광남카써비스</td>
+            <td class="tg-0pky">광주광역시 동구 밤실로 20(지산동)</td>
+            <td class="tg-0pky">062-222-1992</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">광주자동차공업사</td>
+            <td class="tg-0pky">광주광역시 동구 남문로 617(소태동)</td>
+            <td class="tg-0pky">062-225-8626</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">애니카랜드 학동점</td>
+            <td class="tg-0pky">광주광역시 동구 증심천로33번길 19-1(학동)</td>
+            <td class="tg-0pky">062-234-5270</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">스카이모터스</td>
+            <td class="tg-0pky">광주광역시 동구 무등로 428-2(계림동)</td>
+            <td class="tg-0pky">062-419-0322</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">학동카센타</td>
+            <td class="tg-0pky">광주광역시 동구 남문로622번길 1(소태동)</td>
+            <td class="tg-0pky">062-226-1688</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">하이카랜드</td>
+            <td class="tg-0pky">광주광역시 동구 무등로 426(산수동)</td>
+            <td class="tg-0pky">062-222-6257</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">현대자동차공업사</td>
+            <td class="tg-0pky">광주광역시 동구 천변좌로 692(용산동)</td>
+            <td class="tg-0pky">062-234-5227</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">노아자동차정비소</td>
+            <td class="tg-0pky">광주광역시 동구 의재로 86(소태동)</td>
+            <td class="tg-0pky">062-233-7077</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">남선카서비스</td>
+            <td class="tg-0pky">광주광역시 동구 동계천로 4(대인동)</td>
+            <td class="tg-0pky">062-223-5336</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">신호자동차정비</td>
+            <td class="tg-0pky">광주광역시 동구 천변우로 435(금동)</td>
+            <td class="tg-0pky">062-234-5959</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">보리카매니아</td>
+            <td class="tg-0pky">광주광역시 동구 지호로 18(지산동)</td>
+            <td class="tg-0pky">062-228-8852</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">가온카클리닉</td>
+            <td class="tg-0pky">광주광역시 동구 무등로 408-1(계림동)</td>
+            <td class="tg-0pky">062-228-5109</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">에이스모터스</td>
+            <td class="tg-0pky">광주광역시 동구 무등로 439(산수동)</td>
+            <td class="tg-0pky">062-523-8297</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">우주카센타</td>
+            <td class="tg-0pky">광주광역시 동구 천변좌로 642-1(소태동)</td>
+            <td class="tg-0pky">062-652-5073</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">르노코리아자동차서비스코너 산수점</td>
+            <td class="tg-0pky">광주광역시 동구 필문대로 133(산수동)</td>
+            <td class="tg-0pky">062-268-7788</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">유앤아이모터스</td>
+            <td class="tg-0pky">광주광역시 동구 밤실로116번길 1(산수동)</td>
+            <td class="tg-0pky">062-522-6625</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">현대정비센타</td>
+            <td class="tg-0pky">광주광역시 동구 필문대로187번길 19-21(산수동)</td>
+            <td class="tg-0pky">062-222-5344</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">만카종합카써비스</td>
+            <td class="tg-0pky">광주광역시 동구 화산로 346(용산동)</td>
+            <td class="tg-0pky">062-234-1442</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">(유)한결자동차서비스</td>
+            <td class="tg-0pky">광주광역시 동구 소태길 76(소태동)</td>
+            <td class="tg-0pky">062-234-4940</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">모아카서비스</td>
+            <td class="tg-0pky">광주광역시 동구 동명로67번길 14(지산동)</td>
+            <td class="tg-0pky">062-523-5026</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">바별카튜닝</td>
+            <td class="tg-0pky">광주광역시 동구 필문대로 251(동명동)</td>
+            <td class="tg-0pky">062-366-4785</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">지산경정비</td>
+            <td class="tg-0pky">광주광역시 동구 필문대로 219(지산동)</td>
+            <td class="tg-0pky">062-225-3093</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">고려자동차공업사</td>
+            <td class="tg-0pky">광주광역시 동구 중흥로 217(계림동)</td>
+            <td class="tg-0pky">062-228-2740</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">오토오아시스홈플러스 계림점</td>
+            <td class="tg-0pky">광주광역시 동구 무등로 314(계림동)</td>
+            <td class="tg-0pky">062-236-2731</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">카복지매장</td>
+            <td class="tg-0pky">광주광역시 동구 독립로368번길 5(계림동)</td>
+            <td class="tg-0pky">062-521-3171</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">신동아3급자동차공업사</td>
+            <td class="tg-0pky">광주광역시 동구 지호로 24(지산동)</td>
+            <td class="tg-0pky">062-227-7913</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">용산카서비스</td>
+            <td class="tg-0pky">광주광역시 동구 화산로335번길 3(용산동)</td>
+            <td class="tg-0pky">062-222-6914</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">매직카용품</td>
+            <td class="tg-0pky">광주광역시 동구 필문대로 127(산수동)</td>
+            <td class="tg-0pky">062-266-8989</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">(유)동화운수</td>
+            <td class="tg-0pky">광주광역시 동구 남문로 333(월남동)</td>
+            <td class="tg-0pky">062-234-0156</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">(유)뉴무등자동차</td>
+            <td class="tg-0pky">광주광역시 북구 하서로 670(지야동)</td>
+            <td class="tg-0pky">062-575-6112</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">(유)동원1급자동차정비</td>
+            <td class="tg-0pky">광주광역시 북구 저불로 56, 106동(용봉동)</td>
+            <td class="tg-0pky"></td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">(유)신화모터스</td>
+            <td class="tg-0pky">광주광역시 북구 하서로322번길 24-3(양산동)</td>
+            <td class="tg-0pky">062-571-4545</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">(주)뉴 중흥자동차공업사</td>
+            <td class="tg-0pky">광주광역시 북구 제봉로 277-1, 324동(중흥동)</td>
+            <td class="tg-0pky"></td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">(주)다온알에스</td>
+            <td class="tg-0pky">광주광역시 북구 용봉로 77(용봉동)</td>
+            <td class="tg-0pky">062-530-0345</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">(주)아이타이어 자동차공업사(운암점)</td>
+            <td class="tg-0pky">광주광역시 북구 북문대로 183(운암동)</td>
+            <td class="tg-0pky">062-515-5560</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">(주)아진자동차정비</td>
+            <td class="tg-0pky">광주광역시 북구 중가로 42-1(유동)</td>
+            <td class="tg-0pky">062-527-5147</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">(주)애니카랜드동광주점</td>
+            <td class="tg-0pky">광주광역시 북구 면앙로139번길 86(두암동)</td>
+            <td class="tg-0pky">062-266-6161</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">(주)에스지모터스</td>
+            <td class="tg-0pky">광주광역시 북구 하서로672번길 8(지야동)</td>
+            <td class="tg-0pky">062-515-1112</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">(주)케이모터스</td>
+            <td class="tg-0pky">광주광역시 북구 하서로 652-11(지야동)</td>
+            <td class="tg-0pky">062-575-2089</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">(합)북광주 현대 서비스</td>
+            <td class="tg-0pky">광주광역시 북구 하서로672번길 37, 외 2필지(용전동)</td>
+            <td class="tg-0pky">062-576-2323</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">2U카모터스</td>
+            <td class="tg-0pky">광주광역시 북구 설죽로 496-7(일곡동)</td>
+            <td class="tg-0pky">062-261-9444</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">31모터스</td>
+            <td class="tg-0pky">광주광역시 북구 우치로 343(삼각동)</td>
+            <td class="tg-0pky"></td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">CAR TUNE</td>
+            <td class="tg-0pky">광주광역시 북구 금남로 68-1(유동)</td>
+            <td class="tg-0pky"></td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">CSA자동차인테리어학원</td>
+            <td class="tg-0pky">광주광역시 북구 태봉로 54(신안동)</td>
+            <td class="tg-0pky">062-572-9733</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">DS모터스포츠</td>
+            <td class="tg-0pky">광주광역시 북구 양산택지로 138, 1층 103,104호(본촌동)</td>
+            <td class="tg-0pky">062-449-5185</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">H-모터스</td>
+            <td class="tg-0pky">광주광역시 북구 설죽로 160(용봉동)</td>
+            <td class="tg-0pky"></td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">JJ카클리닉</td>
+            <td class="tg-0pky">광주광역시 북구 비엔날레로 161(용봉동)</td>
+            <td class="tg-0pky">062-513-7987</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">MS골드 모터스</td>
+            <td class="tg-0pky">광주광역시 북구 양산택지로 51번길 15(양산동)</td>
+            <td class="tg-0pky">062-266-9664</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">OK공업사</td>
+            <td class="tg-0pky">광주광역시 북구 서하로 237(오치동)</td>
+            <td class="tg-0pky"></td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">RECCO R</td>
+            <td class="tg-0pky">광주광역시 북구 하서로 1116(태령동)</td>
+            <td class="tg-0pky"></td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">THE GARAGE</td>
+            <td class="tg-0pky">광주광역시 북구 설죽로 142(용봉동)</td>
+            <td class="tg-0pky">062-523-8979</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">T-STATION</td>
+            <td class="tg-0pky">광주광역시 북구 북문대로 28(운암동)</td>
+            <td class="tg-0pky">062-511-8979</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">T-station 광주역점</td>
+            <td class="tg-0pky">광주광역시 북구 무등로 205(중흥동)</td>
+            <td class="tg-0pky">062-529-5572</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">Tstation전남대점</td>
+            <td class="tg-0pky">광주광역시 북구 용봉로 50(신안동)</td>
+            <td class="tg-0pky">062-430-2002</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">각화정비검사(주)</td>
+            <td class="tg-0pky">광주광역시 북구 동문대로266번길 40, 404동(각화동)</td>
+            <td class="tg-0pky">062-572-2014</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">강대원카</td>
+            <td class="tg-0pky">광주광역시 북구 참판로 154(두암동)</td>
+            <td class="tg-0pky">062-572-4944</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">강산모터스</td>
+            <td class="tg-0pky">광주광역시 북구 연양로95번길 9(양산동)</td>
+            <td class="tg-0pky">062-572-8833</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">건국카클리닉</td>
+            <td class="tg-0pky">광주광역시 북구 하서로 553(본촌동)</td>
+            <td class="tg-0pky">062-522-0868</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">경전카공업사</td>
+            <td class="tg-0pky">광주광역시 북구 무등로262번길 17(중흥동)</td>
+            <td class="tg-0pky">062-527-2312</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">계림카센타</td>
+            <td class="tg-0pky">광주광역시 북구 경양로183번길 18(중흥동)</td>
+            <td class="tg-0pky">062-266-7610</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">고려유통</td>
+            <td class="tg-0pky">광주광역시 북구 설죽로 174(용봉동)</td>
+            <td class="tg-0pky">062-571-4320</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">고흥카써비스</td>
+            <td class="tg-0pky">광주광역시 북구 면앙로 192(두암동)</td>
+            <td class="tg-0pky">062-513-7741</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">공단카크리닉</td>
+            <td class="tg-0pky">광주광역시 북구 하서로216번길 2(양산동)</td>
+            <td class="tg-0pky"></td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">공임나라 운암점</td>
+            <td class="tg-0pky">광주광역시 북구 비엔날레로 54-6(운암동)</td>
+            <td class="tg-0pky"></td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">광남자동차공업사</td>
+            <td class="tg-0pky">광주광역시 북구 하서로 652-7(지야동)</td>
+            <td class="tg-0pky">062-526-1247</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">광신자동차정비공업사</td>
+            <td class="tg-0pky">광주광역시 북구 무등로111번길 30, 외3필지(신안동)</td>
+            <td class="tg-0pky">062-361-7474</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">광일카센터</td>
+            <td class="tg-0pky">광주광역시 북구 삼소로 398(월출동)</td>
+            <td class="tg-0pky">062-528-8966</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">광주용달협회정비사업부</td>
+            <td class="tg-0pky">광주광역시 북구 독립로349번길 50(중흥동)</td>
+            <td class="tg-0pky">062-961-7422</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">광주카모터스</td>
+            <td class="tg-0pky">광주광역시 북구 자동차로48번길 50(신안동)</td>
+            <td class="tg-0pky">062-527-9314</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">광주카서비스</td>
+            <td class="tg-0pky">광주광역시 북구 제봉로 302-1(중흥동)</td>
+            <td class="tg-0pky">062-527-9728</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">광주카서비스</td>
+            <td class="tg-0pky">광주광역시 북구 중가로 97-4(중흥동)</td>
+            <td class="tg-0pky">062-512-5850</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">광주카센타</td>
+            <td class="tg-0pky">광주광역시 북구 무등로180번길 11(신안동)</td>
+            <td class="tg-0pky">062-531-3111</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">그린카서비스</td>
+            <td class="tg-0pky">광주광역시 북구 용봉로 56(신안동)</td>
+            <td class="tg-0pky"></td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">글로벌모터스</td>
+            <td class="tg-0pky">광주광역시 북구 양산택지로 40(양산동)</td>
+            <td class="tg-0pky"></td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">금동현대소형공업사</td>
+            <td class="tg-0pky">광주광역시 북구 설죽로 623, 313동 2층(일곡동)</td>
+            <td class="tg-0pky">062-529-8601</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">금오오토자동차공업사</td>
+            <td class="tg-0pky">광주광역시 북구 용봉로 102(중흥동)</td>
+            <td class="tg-0pky">062-521-8585</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">금일카종합센타</td>
+            <td class="tg-0pky">광주광역시 북구 서암대로132번길 5(신안동)</td>
+            <td class="tg-0pky">062-526-4480</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">금호부분정비공업사</td>
+            <td class="tg-0pky">광주광역시 북구 용봉로 110(중흥동)</td>
+            <td class="tg-0pky">062-269-4700</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">금호카월드</td>
+            <td class="tg-0pky">광주광역시 북구 태봉로 37-6(임동)</td>
+            <td class="tg-0pky"></td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">기능장모터스</td>
+            <td class="tg-0pky">광주광역시 북구 북문대로 193(동림동)</td>
+            <td class="tg-0pky">062-574-0488</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">기아오토큐양산점</td>
+            <td class="tg-0pky">광주광역시 북구 하서로 381(양산동)</td>
+            <td class="tg-0pky">062-523-4646</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">김스오토케어</td>
+            <td class="tg-0pky">광주광역시 북구 하남대로 629(동림동)</td>
+            <td class="tg-0pky">062-265-3211</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">나의 자동차</td>
+            <td class="tg-0pky">광주광역시 북구 양산택지로 149(본촌동)</td>
+            <td class="tg-0pky"></td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">남광카센타</td>
+            <td class="tg-0pky">광주광역시 북구 경양로119번길 10-10(신안동)</td>
+            <td class="tg-0pky">062-430-2840</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">남양자동차공업사</td>
+            <td class="tg-0pky">광주광역시 북구 송해로 10(삼각동)</td>
+            <td class="tg-0pky">062-652-3456</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">남일자동차공업사</td>
+            <td class="tg-0pky">광주광역시 북구 무등로262번길 16(중흥동)</td>
+            <td class="tg-0pky"></td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">노르딕</td>
+            <td class="tg-0pky">광주광역시 북구 무등로 272-7(중흥동)</td>
+            <td class="tg-0pky">062-523-2705</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">뉴동광카프라자</td>
+            <td class="tg-0pky">광주광역시 북구 본촌마을길 98(본촌동)</td>
+            <td class="tg-0pky">062-523-7454</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">뉴선일공업사</td>
+            <td class="tg-0pky">광주광역시 북구 무등로262번길 32(중흥동)</td>
+            <td class="tg-0pky">062-261-8297</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">뉴오정헤드</td>
+            <td class="tg-0pky">광주광역시 북구 서림로81번길 11(임동)</td>
+            <td class="tg-0pky">062-512-3611</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">다이알자동차공업사</td>
+            <td class="tg-0pky">광주광역시 북구 금호로 112(운암동)</td>
+            <td class="tg-0pky">062-266-4783</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">달구지모터스</td>
+            <td class="tg-0pky">광주광역시 북구 독립로367번길 15(중흥동)</td>
+            <td class="tg-0pky">062-526-7928</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">달구지카사랑</td>
+            <td class="tg-0pky">광주광역시 북구 군왕로 104(두암동)</td>
+            <td class="tg-0pky">062-522-1155</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">달려라경정비</td>
+            <td class="tg-0pky">광주광역시 북구 경열로212번길 4(유동)</td>
+            <td class="tg-0pky"></td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">대광공업사</td>
+            <td class="tg-0pky">광주광역시 북구 우치로275번길 50(오치동)</td>
+            <td class="tg-0pky">062-261-9060</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">대광종합카센터</td>
+            <td class="tg-0pky">광주광역시 북구 버들로 19(유동)</td>
+            <td class="tg-0pky">062-264-2216</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">대도모터스</td>
+            <td class="tg-0pky">광주광역시 북구 무등로 247(중흥동)</td>
+            <td class="tg-0pky">062-572-3267</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">대명써비스</td>
+            <td class="tg-0pky">광주광역시 북구 중가로 82-1(중흥동)</td>
+            <td class="tg-0pky">062-523-8815</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">대산카프라자</td>
+            <td class="tg-0pky">광주광역시 북구 면앙로139번길 22(두암동)</td>
+            <td class="tg-0pky">062-529-9022</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">대성모터스 손세차</td>
+            <td class="tg-0pky">광주광역시 북구 연양로105번길 30(양산동)</td>
+            <td class="tg-0pky">062-572-0061</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">대성카센타</td>
+            <td class="tg-0pky">광주광역시 북구 천지인로 79(오치동)</td>
+            <td class="tg-0pky">062-523-2994</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">대승자동차공업사</td>
+            <td class="tg-0pky">광주광역시 북구 용봉로 38-1(신안동)</td>
+            <td class="tg-0pky">062-523-0355</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">대신자동차공업사</td>
+            <td class="tg-0pky">광주광역시 북구 서암대로131번길 6(신안동)</td>
+            <td class="tg-0pky"></td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">대양자동차공업사</td>
+            <td class="tg-0pky">광주광역시 북구 용봉로 42-1(신안동)</td>
+            <td class="tg-0pky">062-953-8353</td>
+        </tr>
+        <tr>
+            <td class="tg-0pky">대왕자동차정비서비스</td>
+            <td class="tg-0pky">광주광역시 북구 하서로672번길 18-7(지야동)</td>
+            <td class="tg-0pky"></td>
+        </tr>
+        </tbody>
+        </table>
+{% endblock %}

@@ -31,8 +31,12 @@
                     href="{% if menu.map %}#{% else %}/map{% endif %}">
                     <i class="fa-solid fa-earth-asia"></i> 지도 표시</a>
             <a class="nav-link disabled"></a>
+            <a class="nav-link {% if menu.excel %}active{% endif %}" 
+                    href="{% if menu.excel %}#{% else %}/excel{% endif %}">
+                    <i class="fa-solid fa-earth-america"></i> 정비업체 리스트</a>
+            <a class="nav-link disabled"></a>
             <a class="nav-link disabled" style="margin-right:50px;">
-                <strong>리뷰 분석을 통한 호텔 카테고리 재분류</strong>
+                <strong>사고사진 분석과 거리에 따른 정비업체 추천</strong>
             </a>
         </nav>
     </nav>
