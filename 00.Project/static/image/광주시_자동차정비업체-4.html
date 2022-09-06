@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = true;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d5ec39a6164268a3a149950e8f19b835 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 100px;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d5ec39a6164268a3a149950e8f19b835" ></div>
+        
+</body>
+<script>    
+    
+            var map_d5ec39a6164268a3a149950e8f19b835 = L.map(
+                "map_d5ec39a6164268a3a149950e8f19b835",
+                {
+                    center: [35.16788654500004, 126.85585907752137],
+                    crs: L.CRS.EPSG3857,
+                    maxBounds: [[35.1592648443514, 126.925492376409], [35.1592648443514, 126.925492376409]],
+                    zoom: 17,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_13dce6321e5fdb3fdf606453dc2e3e32 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 17, "maxZoom": 17, "minZoom": 17, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d5ec39a6164268a3a149950e8f19b835);
+        
+    
+            var marker_e8e2854b77791fe63c0a0a6c99991417 = L.marker(
+                [35.1592648443514, 126.925492376409],
+                {}
+            ).addTo(map_d5ec39a6164268a3a149950e8f19b835);
+        
+    
+            var icon_3f1b7c1a874b6ed29b62247e096ae61d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_e8e2854b77791fe63c0a0a6c99991417.setIcon(icon_3f1b7c1a874b6ed29b62247e096ae61d);
+        
+    
+        var popup_b55ac004f5a5833f342e76b471aade31 = L.popup({"maxWidth": 200});
+
+        
+            var html_54e7f8ab5ae721aa880056b6527d195d = $(`<div id="html_54e7f8ab5ae721aa880056b6527d195d" style="width: 100.0%; height: 100.0%;">광주 동구 산수길35번길 36-2</div>`)[0];
+            popup_b55ac004f5a5833f342e76b471aade31.setContent(html_54e7f8ab5ae721aa880056b6527d195d);
+        
+
+        marker_e8e2854b77791fe63c0a0a6c99991417.bindPopup(popup_b55ac004f5a5833f342e76b471aade31)
+        ;
+
+        
+    
+    
+            marker_e8e2854b77791fe63c0a0a6c99991417.bindTooltip(
+                `<div>
+                     사고위치
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ff9be16569540a05385fa78f22c26137 = L.circleMarker(
+                [35.1592648443514, 126.925492376409],
+                {"bubblingMouseEvents": true, "color": "#ffffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "ffffff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 200, "stroke": true, "weight": 3}
+            ).addTo(map_d5ec39a6164268a3a149950e8f19b835);
+        
+</script>

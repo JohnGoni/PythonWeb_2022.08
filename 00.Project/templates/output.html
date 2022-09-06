@@ -1,0 +1,19 @@
+{% extends "base.html"%}
+{% block style_head %}{% endblock %}
+{% block body %}
+            <tr>
+               <th> 주소 </th>
+               <td> {{ result }} </td>
+               <img src="{{url_for('static', filename='upload/'+fname)}}" alt="입력된 사진">
+               <div class="row">
+                  <div class="col-1"></div>
+                  <div class="col-10">
+                      <div class="d-block w-100" align="right">
+                          <iframe src="{{url_for('static', filename='marker.html')}}" 
+                                  frameborder="1" width="600" height="600" scrolling="no"></iframe>
+                      </div>
+                  </div>
+                  <div class="col-1"></div>
+                </div>
+            </tr>
+{% endblock %}
