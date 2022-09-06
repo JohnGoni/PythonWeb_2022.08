@@ -32,7 +32,7 @@ with open('./kakaoapi.txt') as kf:
 """URL 만들기"""
 
 local_url  = "https://dapi.kakao.com/v2/local/search/address.json"
-addr = '광주광역시 동구 산수길35번길 36-2'
+addr = '광주광역시 북구 태봉로 46'
 url = f'{local_url}?query={quote(addr)}'
 url
 
@@ -64,7 +64,7 @@ data={
 df = pd.DataFrame(data)
 
 
-df2 = pd.read_csv('./광주_자동차정비업체.csv')
+df2 = pd.read_csv('../광주_자동차정비업체.csv')
 map = folium.Map(location=[df2.위도.mean(), df2.경도.mean()], zoom_start=17,
 max_bounds=True,
 min_zoom=17,
@@ -94,8 +94,6 @@ folium.CircleMarker(
     color="#ffffff",        # RGB, 16진수
     fill=True,
     fill_color="ffffff"
-).add_to(map)
-title_html = '<h3 align="center" style="font-size:20px">자동차 정비업체</h3>'    
-map.get_root().html.add_child(folium.Element(title_html))
+).add_to(map) 
 map.save('광주시_자동차정비업체.html')
 map
